@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="padding_medium">20dp</dimen>
+    <dimen name="padding_high">30dp</dimen>
+    <dimen name="padding_default">10dp</dimen>
+    <dimen name="padding_low">5dp</dimen>
+    <dimen name="padding_highest">40dp</dimen>
+
+</resources>

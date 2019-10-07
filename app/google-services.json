@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "127620298714",
+    "firebase_url": "https://shoppingqr-51242.firebaseio.com",
+    "project_id": "shoppingqr-51242",
+    "storage_bucket": "shoppingqr-51242.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127620298714:android:d73af68d80ade2948172e3",
+        "android_client_info": {
+          "package_name": "com.chandu.qr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127620298714-rs856qm2usv0cqa2bho266t8up4hhmbt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chandu.qr",
+            "certificate_hash": "6d616f8d79d2b097bd51b89bcf2520004bc03fd0"
+          }
+        },
+        {
+          "client_id": "127620298714-7govpj0q6i1isfh58niqaok7h9p6fpcr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZrw9SY-jK2zSto52c4BQnrJvCzujHP_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127620298714-7govpj0q6i1isfh58niqaok7h9p6fpcr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
