@@ -7,6 +7,9 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 import com.google.zxing.integration.android.IntentIntegrator
+import io.paperdb.Paper
+import kotlinx.android.synthetic.main.activity_main.*
+
 
 import org.json.JSONException
 import org.json.JSONObject
@@ -21,10 +24,11 @@ class MainActivity : AppCompatActivity() {
 
     private var qrScanIntegrator: IntentIntegrator? = null
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        Paper.init(this)
         txtName = findViewById(R.id.name)
         txtSiteName = findViewById(R.id.site_name)
 
@@ -37,6 +41,10 @@ class MainActivity : AppCompatActivity() {
         val button = findViewById<Button>(R.id.showQRScanner)
         button?.setOnClickListener {
             // Add code to show QR Scanner Code in Fragment.
+        }
+        showCart.setOnClickListener {
+
+            startActivity(Intent(this, ShoppingCartActivity::class.java))
         }
     }
 
