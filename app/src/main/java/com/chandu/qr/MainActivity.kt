@@ -5,10 +5,14 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
+import com.fasterxml.jackson.module.kotlin.readValue
 
 import com.google.zxing.integration.android.IntentIntegrator
 import io.paperdb.Paper
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_main.showCart
+import kotlinx.android.synthetic.main.activity_main2.*
 
 
 import org.json.JSONException
@@ -24,6 +28,8 @@ class MainActivity : AppCompatActivity() {
 
     private var qrScanIntegrator: IntentIntegrator? = null
 
+    private var products = listOf<Product>()
+    private lateinit var productAdapter: ProductAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,6 +48,9 @@ class MainActivity : AppCompatActivity() {
         button?.setOnClickListener {
             // Add code to show QR Scanner Code in Fragment.
         }
+     //   DrawerBuilder().withActivity(this).build()
+
+
         showCart.setOnClickListener {
 
             startActivity(Intent(this, ShoppingCartActivity::class.java))

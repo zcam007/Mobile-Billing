@@ -15,6 +15,10 @@ import retrofit2.Call
 import retrofit2.Response
 import com.fasterxml.jackson.module.kotlin.*
 import com.google.firebase.database.*
+import org.jetbrains.anko.doAsync
+import org.jetbrains.anko.toast
+import org.jetbrains.anko.uiThread
+import java.net.URL
 
 
 class Main2Activity : AppCompatActivity() {
@@ -28,19 +32,11 @@ private lateinit var database: DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Paper.init(this)
-
         setContentView(R.layout.activity_main2)
-
-
     //    setSupportActionBar(toolbar)
-        //apiService = APIConfig.getRetrofitClient(this).create(APIService::class.java)
-        val mapper = jacksonObjectMapper()
-
-
+     //   apiService = APIConfig.getRetrofitClient(this).create(APIService::class.java)
 //        swipeRefreshLayout.setColorSchemeColors(ContextCompat.getColor(this, R.color.colorPrimary))
-
 //        swipeRefreshLayout.isRefreshing = true
-
 
 //        val layoutManager = StaggeredGridLayoutManager(this, Lin)
 
@@ -50,36 +46,25 @@ private lateinit var database: DatabaseReference
         cart_size.text = ShoppingCart.getShoppingCartSize().toString()
 
 
-// ...
-//        database = FirebaseDatabase.getInstance().getReference("/products")
-        //mMessageReference = FirebaseDatabase.getInstance().getReference("products")
-//        val messageListener = object : ValueEventListener {
-//
-//            override fun onDataChange(dataSnapshot: DataSnapshot) {
-//                if (dataSnapshot.exists()) {
-//                    val product = dataSnapshot.getValue(Product::class.java)
-//                    Toast.makeText(this@Main2Activity, product.toString(), Toast.LENGTH_SHORT).show()
-//                    // ...
-//                }
-//            }
-//
-//            override fun onCancelled(databaseError: DatabaseError) {
-//                // Failed to read value
-//            }
-//        }
-//        mMessageReference!!.addValueEventListener(messageListener)
-
-
         val json = """{"description": "asdd", "id": 26,"name":"test","price":123}"""
 //        val state = mapper.readValue<Product>("https://api.myjson.com/bins/15b6fq")
-        var product: Product = mapper.readValue(json)
-        println(product)
-        products+=product
-        productAdapter = ProductAdapter(this@Main2Activity, products)
+       // val json = URL("https://api.npoint.io/91b780cf9c91397d3ffd/").readText()
+       // var product: Product = mapper.readValue(json)
+       // println(product)
+//        products+=product
+//        productAdapter = ProductAdapter(this@Main2Activity, products)
 
-        products_recyclerview.adapter = productAdapter
-      //  getProducts()
+//        products_recyclerview.adapter = productAdapter
+        //Toast.makeText(this@Main2Activity, URL("https://api.npoint.io/91b780cf9c91397d3ffd/").readText(), Toast.LENGTH_SHORT).show()
 
+        //getProducts()
+        doAsync {
+            var result = URL("https://api.npoint.io/91b780cf9c91397d3ffd/").readText()
+            uiThread {
+                toast(result)
+                getProducts2(result)
+            }
+        }
 
         showCart.setOnClickListener {
 
@@ -88,7 +73,16 @@ private lateinit var database: DatabaseReference
 
     }
 
-
+    private fun getProducts2(result: String) {
+        val mapper = jacksonObjectMapper()
+//        var product: Product = mapper.readValue(result)
+        val product: List<Product> = mapper.readValue(result)
+        println(product)
+        products+=product
+        productAdapter = ProductAdapter(this@Main2Activity, products)
+        products_recyclerview.adapter = productAdapter
+        productAdapter.notifyDataSetChanged()
+    }
     private fun getProducts() {
 
         apiService.getProducts().enqueue(object : retrofit2.Callback<List<Product>> {
@@ -105,14 +99,14 @@ private lateinit var database: DatabaseReference
 //                swipeRefreshLayout.isRefreshing = false
              //   swipeRefreshLayout.is
 //                swipeRefreshLayout.isEnabled = false
+                Toast.makeText(this@Main2Activity, response.body().toString(), Toast.LENGTH_SHORT).show()
+//                products = response.body()!!
 
-                products = response.body()!!
-
-                productAdapter = ProductAdapter(this@Main2Activity, products)
-
-                products_recyclerview.adapter = productAdapter
-
-                productAdapter.notifyDataSetChanged()
+//                productAdapter = ProductAdapter(this@Main2Activity, products)
+//
+//                products_recyclerview.adapter = productAdapter
+//
+//                productAdapter.notifyDataSetChanged()
 
             }
 

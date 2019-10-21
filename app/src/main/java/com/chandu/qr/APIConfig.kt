@@ -10,8 +10,7 @@ import retrofit2.converter.scalars.ScalarsConverterFactory
 
 object APIConfig {
 
-    val BASE_URL = "https://all-spices.com/api/products/"
-
+    val BASE_URL = "https://api.npoint.io/91b780cf9c91397d3ffd/"
     private var retrofit: Retrofit? = null
 
 
