@@ -65,6 +65,7 @@ class LoginActivity : AppCompatActivity() {
        // val user = mAuth.getCurrentUser()
 
       //  updateUI(user)
+      //  mAuth.currentUser
         signInSuccess()
     }
     else {

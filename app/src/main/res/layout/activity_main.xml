@@ -81,4 +81,10 @@
             android:layout_marginLeft="15dp"/>
 
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/productsPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Products" />
 </LinearLayout>

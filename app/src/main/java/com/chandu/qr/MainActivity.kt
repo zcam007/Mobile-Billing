@@ -55,6 +55,9 @@ class MainActivity : AppCompatActivity() {
 
             startActivity(Intent(this, ShoppingCartActivity::class.java))
         }
+        productsPage.setOnClickListener{
+            startActivity(Intent(this, ShoppingList::class.java))
+        }
     }
 
     private fun performAction() {

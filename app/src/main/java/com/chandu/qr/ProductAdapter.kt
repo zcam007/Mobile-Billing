@@ -24,16 +24,10 @@ class ProductAdapter(var context: Context, private var products: List<Product> =
     }
 
     override fun getItemCount(): Int = products.size
-
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
-
         viewHolder.bindProduct(products[position])
-
-
-        (context as Main2Activity).coordinator
-
+        (context as ShoppingList).coordinator
     }
-
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
@@ -66,7 +60,7 @@ var url="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/art
                     ShoppingCart.addItem(item)
                     //notify users
                     Snackbar.make(
-                        (itemView.context as Main2Activity).coordinator,
+                        (itemView.context as ShoppingList).coordinator,
                         "${product.name} added to your cart",
                         Snackbar.LENGTH_LONG
                     ).show()
@@ -83,7 +77,7 @@ var url="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/art
                     ShoppingCart.removeItem(item, itemView.context)
 
                     Snackbar.make(
-                        (itemView.context as Main2Activity).coordinator,
+                        (itemView.context as ShoppingList).coordinator,
                         "${product.name} removed from your cart",
                         Snackbar.LENGTH_LONG
                     ).show()
@@ -103,7 +97,7 @@ var url="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/art
                 }
 
 
-                (itemView.context as Main2Activity).cart_size.text = quantity.toString()
+                (itemView.context as ShoppingList).cart_size.text = quantity.toString()
                 Toast.makeText(itemView.context, "Cart size $quantity", Toast.LENGTH_SHORT).show()
 
 
