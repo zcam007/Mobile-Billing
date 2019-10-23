@@ -25,12 +25,8 @@ import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.toast
 import org.jetbrains.anko.uiThread
 import java.net.URL
-import kotlin.reflect.jvm.internal.impl.load.java.lazy.ContextKt.child
 import com.google.firebase.database.DatabaseReference
 import com.google.gson.Gson
-import androidx.core.app.ComponentActivity.ExtraData
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 
 
 

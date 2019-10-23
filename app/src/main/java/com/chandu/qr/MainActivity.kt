@@ -5,14 +5,11 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
-import com.fasterxml.jackson.module.kotlin.readValue
-
+import com.google.firebase.auth.FirebaseAuth
 import com.google.zxing.integration.android.IntentIntegrator
 import io.paperdb.Paper
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.showCart
-import kotlinx.android.synthetic.main.activity_main2.*
 
 
 import org.json.JSONException
@@ -30,19 +27,28 @@ class MainActivity : AppCompatActivity() {
 
     private var products = listOf<Product>()
     private lateinit var productAdapter: ProductAdapter
+    private var welcomeName: TextView?= null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Paper.init(this)
-        txtName = findViewById(R.id.name)
-        txtSiteName = findViewById(R.id.site_name)
-
+    //    txtName = findViewById(R.id.name)
+   //     txtSiteName = findViewById(R.id.site_name)
+        welcomeName=findViewById(R.id.welcomeTag)
         btnScan = findViewById(R.id.btnScan)
         btnScan!!.setOnClickListener { performAction() }
 
         qrScanIntegrator = IntentIntegrator(this)
         qrScanIntegrator?.setOrientationLocked(false)
+
+        var instance= FirebaseAuth.getInstance()
+
+        if(instance.currentUser!!.displayName==null){
+            welcomeName!!.text="Welcome, "+instance.currentUser!!.email
+
+        }else
+        welcomeName!!.text="Welcome, "+instance.currentUser!!.displayName
 
         val button = findViewById<Button>(R.id.showQRScanner)
         button?.setOnClickListener {
@@ -77,8 +83,8 @@ class MainActivity : AppCompatActivity() {
                     val obj = JSONObject(result.contents)
 
                     // Show values in UI.
-                    txtName?.text = obj.getString("name")
-                    txtSiteName?.text = obj.getString("site_name")
+                 //   txtName?.text = obj.getString("name")
+                   // txtSiteName?.text = obj.getString("site_name")
 
                 } catch (e: JSONException) {
                     e.printStackTrace()

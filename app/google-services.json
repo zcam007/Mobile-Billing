@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "127620298714-rodf8htmus00pqkceboknbdli0o9qp8u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chandu.qr",
+            "certificate_hash": "2d2318735f34b9a000b5a89b777ee730e87e3d60"
+          }
+        },
+        {
           "client_id": "127620298714-rs856qm2usv0cqa2bho266t8up4hhmbt.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
