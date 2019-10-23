@@ -39,9 +39,9 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         //This is to make fullscreen - Remove time bar
-        requestWindowFeature( Window.FEATURE_NO_TITLE )
-        window.setFlags( WindowManager.LayoutParams.FLAG_FULLSCREEN,
-            WindowManager.LayoutParams.FLAG_FULLSCREEN )
+//        requestWindowFeature( Window.FEATURE_NO_TITLE )
+//        window.setFlags( WindowManager.LayoutParams.FLAG_FULLSCREEN,
+//            WindowManager.LayoutParams.FLAG_FULLSCREEN )
 
         //This is to remove ap title bar
         this.supportActionBar!!.hide()

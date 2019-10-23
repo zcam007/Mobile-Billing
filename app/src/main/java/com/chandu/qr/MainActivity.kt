@@ -7,6 +7,10 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.zxing.integration.android.IntentIntegrator
+import com.mikepenz.materialdrawer.DrawerBuilder
+import com.mikepenz.materialdrawer.model.DividerDrawerItem
+import com.mikepenz.materialdrawer.model.PrimaryDrawerItem
+import com.mikepenz.materialdrawer.model.SecondaryDrawerItem
 import io.paperdb.Paper
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.showCart
@@ -14,6 +18,13 @@ import kotlinx.android.synthetic.main.activity_main.showCart
 
 import org.json.JSONException
 import org.json.JSONObject
+import com.mikepenz.materialdrawer.model.interfaces.IProfile
+import com.mikepenz.materialdrawer.AccountHeader
+//import android.R
+import com.mikepenz.materialdrawer.model.ProfileDrawerItem
+import com.mikepenz.materialdrawer.AccountHeaderBuilder
+
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -35,6 +46,8 @@ class MainActivity : AppCompatActivity() {
         Paper.init(this)
     //    txtName = findViewById(R.id.name)
    //     txtSiteName = findViewById(R.id.site_name)
+
+        this.supportActionBar!!.hide()
         welcomeName=findViewById(R.id.welcomeTag)
         btnScan = findViewById(R.id.btnScan)
         btnScan!!.setOnClickListener { performAction() }
@@ -49,6 +62,28 @@ class MainActivity : AppCompatActivity() {
 
         }else
         welcomeName!!.text="Welcome, "+instance.currentUser!!.displayName
+
+
+        val headerResult = AccountHeaderBuilder()
+            .withActivity(this)
+            .addProfiles(
+                ProfileDrawerItem().withName("Mike Penz").withEmail("mikepenz@gmail.com")
+            )
+
+            .build()
+
+        var result= DrawerBuilder().withActivity(this)
+            .withTranslucentStatusBar(false)
+            .withActionBarDrawerToggle(true)
+            .withAccountHeader(headerResult)
+
+            .addDrawerItems(
+                 PrimaryDrawerItem().withName("Hello"),
+                 DividerDrawerItem(),
+                 SecondaryDrawerItem().withName("Menu item2")
+            )
+                    .build()
+
 
         val button = findViewById<Button>(R.id.showQRScanner)
         button?.setOnClickListener {

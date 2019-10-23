@@ -60,7 +60,7 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'com.fasterxml.jackson.module:jackson-module-kotlin:2.10.0.pr3'
     implementation 'org.jetbrains.anko:anko-common:0.9'
-
+    implementation "com.mikepenz:materialdrawer-nav:7.0.0-rc08"
 
 }
 apply plugin: 'com.google.gms.google-services'
