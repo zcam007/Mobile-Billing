@@ -70,8 +70,8 @@ class LoginActivity : AppCompatActivity() {
         if(mAuth!=null){
             val intent = Intent(this@LoginActivity, MainActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
-            startActivity(intent)
-            finish()
+            //startActivity(intent)
+            //finish()
         }
         btnSignin!!.setOnClickListener {
             firebaseSignin()
