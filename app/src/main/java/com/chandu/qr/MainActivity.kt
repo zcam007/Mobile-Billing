@@ -25,6 +25,11 @@ import com.mikepenz.materialdrawer.model.ProfileDrawerItem
 import com.mikepenz.materialdrawer.AccountHeaderBuilder
 import kotlinx.android.synthetic.main.activity_main.cart_size
 import kotlinx.android.synthetic.main.activity_shopping_list.*
+import androidx.core.app.ComponentActivity.ExtraData
+import androidx.core.content.ContextCompat.getSystemService
+import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -63,12 +68,13 @@ class MainActivity : AppCompatActivity() {
 
         }else
         welcomeName!!.text="Welcome, "+instance.currentUser!!.displayName
-
-
+       // SupportActionBar.setDisplayHomeAsUpEnabled(false);
+        //result.getActionBarDrawerToggle().setDrawerIndicatorEnabled(true);
+//println("Photoooo  "+instance.currentUser!!.photoUrl!!)
         val headerResult = AccountHeaderBuilder()
             .withActivity(this)
             .addProfiles(
-                ProfileDrawerItem().withName("Mike Penz").withEmail("mikepenz@gmail.com")
+                ProfileDrawerItem().withName(welcomeName!!.text).withEmail(instance.currentUser!!.email).withIcon(instance.currentUser!!.photoUrl!!)
             )
 
             .build()
@@ -134,4 +140,6 @@ class MainActivity : AppCompatActivity() {
             super.onActivityResult(requestCode, resultCode, data)
         }
     }
+
+
 }
