@@ -23,7 +23,8 @@ import com.mikepenz.materialdrawer.AccountHeader
 //import android.R
 import com.mikepenz.materialdrawer.model.ProfileDrawerItem
 import com.mikepenz.materialdrawer.AccountHeaderBuilder
-
+import kotlinx.android.synthetic.main.activity_main.cart_size
+import kotlinx.android.synthetic.main.activity_shopping_list.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -91,7 +92,7 @@ class MainActivity : AppCompatActivity() {
         }
      //   DrawerBuilder().withActivity(this).build()
 
-
+        cart_size.text = ShoppingCart.getShoppingCartSize().toString()
         showCart.setOnClickListener {
 
             startActivity(Intent(this, ShoppingCartActivity::class.java))
