@@ -39,12 +39,17 @@ class ShoppingCart {
 
                     Toast.makeText(context, "great quantity", Toast.LENGTH_SHORT).show()
                     targetItem.quantity--
-                } else {
+                    if(targetItem.quantity==0){
+                        cart.remove(targetItem)
+                    }
+                }
+                else {
+                    println("-----------------------------REMOVEDDDDDD---------------------------")
                     cart.remove(targetItem)
                 }
 
             }
-
+println(cart)
             saveCart(cart)
 
         }

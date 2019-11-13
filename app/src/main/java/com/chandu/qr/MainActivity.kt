@@ -18,18 +18,14 @@ import kotlinx.android.synthetic.main.activity_main.showCart
 
 import org.json.JSONException
 import org.json.JSONObject
-import com.mikepenz.materialdrawer.model.interfaces.IProfile
-import com.mikepenz.materialdrawer.AccountHeader
-//import android.R
 import com.mikepenz.materialdrawer.model.ProfileDrawerItem
 import com.mikepenz.materialdrawer.AccountHeaderBuilder
 import kotlinx.android.synthetic.main.activity_main.cart_size
-import kotlinx.android.synthetic.main.activity_shopping_list.*
-import androidx.core.app.ComponentActivity.ExtraData
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
-
-
+import com.mikepenz.materialdrawer.util.DrawerImageLoader
+import android.graphics.drawable.Drawable
+import com.mikepenz.materialdrawer.util.AbstractDrawerImageLoader
+import android.net.Uri
+import android.widget.ImageView
 
 
 class MainActivity : AppCompatActivity() {
@@ -78,6 +74,8 @@ class MainActivity : AppCompatActivity() {
             )
 
             .build()
+        //Resources().getDrawable(R.drawable.profile)
+       // DrawerImageLoader.init()
 
         var result= DrawerBuilder().withActivity(this)
             .withTranslucentStatusBar(false)

@@ -9,7 +9,16 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb248c33-c423-449e-be35-f4ed042c393b" name="Default Changelist" comment="" />
+    <list default="true" id="fb248c33-c423-449e-be35-f4ed042c393b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/chandu/qr/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/chandu/qr/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/chandu/qr/ShoppingCart.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/chandu/qr/ShoppingCart.kt" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/chandu/qr/ProductAdapter.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="451">
-              <caret line="49" column="44" lean-forward="true" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+              <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
               <folding>
                 <element signature="e#23#538#0" expanded="true" />
               </folding>
@@ -81,7 +90,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/chandu/qr/ShoppingList.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-6">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#24#789#0" expanded="true" />
               </folding>
@@ -93,7 +102,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_shopping_list.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="645">
-              <caret line="43" column="38" lean-forward="true" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+              <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
             </state>
           </provider>
           <provider editor-type-id="android-designer2" />
@@ -103,7 +112,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/chandu/qr/ShoppingCartAdapter.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="690">
-              <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+              <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
               <folding>
                 <element signature="e#23#288#0" expanded="true" />
               </folding>
@@ -111,11 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/chandu/qr/ShoppingCart.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
-              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="671">
+              <caret line="46" column="91" selection-start-line="46" selection-start-column="91" selection-end-line="46" selection-end-column="91" />
               <folding>
                 <element signature="e#23#105#0" expanded="true" />
               </folding>
@@ -127,7 +136,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/chandu/qr/ShoppingCartActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="825">
-              <caret line="55" column="1" lean-forward="true" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+              <caret line="55" column="1" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
               <folding>
                 <element signature="e#23#362#0" expanded="true" />
               </folding>
@@ -145,11 +154,14 @@
           <provider editor-type-id="android-designer2" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/chandu/qr/MainActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="73" column="4" lean-forward="true" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
+            <state relative-caret-position="910">
+              <caret line="109" column="40" lean-forward="true" selection-start-line="109" selection-start-column="40" selection-end-line="109" selection-end-column="40" />
+              <folding>
+                <element signature="e#22#1711#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -215,12 +227,12 @@
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/chandu/qr/LoginActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/chandu/qr/ShoppingCart.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/chandu/qr/ProductAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/chandu/qr/ShoppingList.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/chandu/qr/ShoppingCartAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/chandu/qr/ShoppingCartActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/chandu/qr/MainActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/chandu/qr/ShoppingCart.kt" />
       </list>
     </option>
   </component>
@@ -683,7 +695,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/chandu/qr/ProductAdapter.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="451">
-          <caret line="49" column="44" lean-forward="true" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+          <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
           <folding>
             <element signature="e#23#538#0" expanded="true" />
           </folding>
@@ -705,20 +717,10 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/chandu/qr/ShoppingCart.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="e#23#105#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_shopping_list.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
-          <caret line="43" column="38" lean-forward="true" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+          <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
@@ -726,19 +728,19 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/chandu/qr/ShoppingList.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#24#789#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/chandu/qr/ShoppingCartAdapter.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/chandu/qr/MainActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+        <state relative-caret-position="910">
+          <caret line="109" column="40" lean-forward="true" selection-start-line="109" selection-start-column="40" selection-end-line="109" selection-end-column="40" />
           <folding>
-            <element signature="e#23#288#0" expanded="true" />
+            <element signature="e#22#1711#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -746,17 +748,30 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/chandu/qr/ShoppingCartActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="825">
-          <caret line="55" column="1" lean-forward="true" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+          <caret line="55" column="1" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
           <folding>
             <element signature="e#23#362#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/chandu/qr/MainActivity.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/chandu/qr/ShoppingCartAdapter.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="73" column="4" lean-forward="true" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
+        <state relative-caret-position="690">
+          <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+          <folding>
+            <element signature="e#23#288#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/chandu/qr/ShoppingCart.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="671">
+          <caret line="46" column="91" selection-start-line="46" selection-start-column="91" selection-end-line="46" selection-end-column="91" />
+          <folding>
+            <element signature="e#23#105#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
