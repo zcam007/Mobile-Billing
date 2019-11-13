@@ -14,6 +14,7 @@ class ShoppingCart {
 
             val targetItem = cart.singleOrNull { it.product.id == cartItem.product.id }
 
+            //println("target item Id: "+targetItem)
             if (targetItem == null) {
                 cartItem.quantity++
                 cart.add(cartItem)

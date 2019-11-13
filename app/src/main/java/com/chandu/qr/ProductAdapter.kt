@@ -11,7 +11,7 @@ import com.google.android.material.snackbar.Snackbar
 import com.squareup.picasso.Picasso
 import io.reactivex.Observable
 import io.reactivex.ObservableOnSubscribe
-import kotlinx.android.synthetic.main.activity_main2.*
+import kotlinx.android.synthetic.main.activity_shopping_list.*
 import kotlinx.android.synthetic.main.product_row_item.view.*
 
 class ProductAdapter(var context: Context, private var products: List<Product> = arrayListOf()) : RecyclerView.Adapter<ProductAdapter.ViewHolder>() {

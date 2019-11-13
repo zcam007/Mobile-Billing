@@ -24,9 +24,9 @@ class ShoppingCartActivity : AppCompatActivity() {
 //        supportActionBar?.setDisplayShowHomeEnabled(true)
 //        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 //
-//        val upArrow = ContextCompat.getDrawable(this, R.drawable.abc_ic_ab_back_material)
-//        upArrow?.setColorFilter(ContextCompat.getColor(this, R.color.colorPrimary), PorterDuff.Mode.SRC_ATOP)
-//        supportActionBar?.setHomeAsUpIndicator(upArrow)
+        val upArrow = ContextCompat.getDrawable(this, R.drawable.abc_ic_ab_back_material)
+        upArrow?.setColorFilter(ContextCompat.getColor(this, R.color.colorPrimary), PorterDuff.Mode.SRC_ATOP)
+        supportActionBar?.setHomeAsUpIndicator(upArrow)
 
 
         adapter = ShoppingCartAdapter(this, ShoppingCart.getCart())
