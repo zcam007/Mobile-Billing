@@ -14,6 +14,7 @@ class ShoppingCart {
 
             val targetItem = cart.singleOrNull { it.product.id == cartItem.product.id }
 
+            //println("target item Id: "+targetItem)
             if (targetItem == null) {
                 cartItem.quantity++
                 cart.add(cartItem)
@@ -38,12 +39,17 @@ class ShoppingCart {
 
                     Toast.makeText(context, "great quantity", Toast.LENGTH_SHORT).show()
                     targetItem.quantity--
-                } else {
+                    if(targetItem.quantity==0){
+                        cart.remove(targetItem)
+                    }
+                }
+                else {
+                    println("-----------------------------REMOVEDDDDDD---------------------------")
                     cart.remove(targetItem)
                 }
 
             }
-
+println(cart)
             saveCart(cart)
 
         }
