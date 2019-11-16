@@ -20,7 +20,7 @@ class ShoppingCartAdapter(var context: Context, var cartItems: List<CartItem>) :
     override fun getItemCount(): Int = cartItems.size
 
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
-
+        //if(cartItems[position].quantity!=0)
         viewHolder.bindItem(cartItems[position])
     }
 
@@ -33,11 +33,11 @@ class ShoppingCartAdapter(var context: Context, var cartItems: List<CartItem>) :
           //  Picasso.get().load(cartItem.product.photos[0].filename).fit().into(itemView.product_image)
 
 
-            itemView.product_name.text = cartItem.product.name
+                itemView.product_name.text = cartItem.product.name
 
-            itemView.product_price.text = "$${cartItem.product.price}"
+                itemView.product_price.text = "$${cartItem.product.price}"
 
-            itemView.product_quantity.text = cartItem.quantity.toString()
+                itemView.product_quantity.text = cartItem.quantity.toString()
 
         }
 

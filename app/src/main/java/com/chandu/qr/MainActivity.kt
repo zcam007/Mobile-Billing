@@ -18,12 +18,14 @@ import kotlinx.android.synthetic.main.activity_main.showCart
 
 import org.json.JSONException
 import org.json.JSONObject
-import com.mikepenz.materialdrawer.model.interfaces.IProfile
-import com.mikepenz.materialdrawer.AccountHeader
-//import android.R
 import com.mikepenz.materialdrawer.model.ProfileDrawerItem
 import com.mikepenz.materialdrawer.AccountHeaderBuilder
-
+import kotlinx.android.synthetic.main.activity_main.cart_size
+import com.mikepenz.materialdrawer.util.DrawerImageLoader
+import android.graphics.drawable.Drawable
+import com.mikepenz.materialdrawer.util.AbstractDrawerImageLoader
+import android.net.Uri
+import android.widget.ImageView
 
 
 class MainActivity : AppCompatActivity() {
@@ -62,15 +64,18 @@ class MainActivity : AppCompatActivity() {
 
         }else
         welcomeName!!.text="Welcome, "+instance.currentUser!!.displayName
-
-
+       // SupportActionBar.setDisplayHomeAsUpEnabled(false);
+        //result.getActionBarDrawerToggle().setDrawerIndicatorEnabled(true);
+//println("Photoooo  "+instance.currentUser!!.photoUrl!!)
         val headerResult = AccountHeaderBuilder()
             .withActivity(this)
             .addProfiles(
-                ProfileDrawerItem().withName("Mike Penz").withEmail("mikepenz@gmail.com")
+                ProfileDrawerItem().withName(welcomeName!!.text).withEmail(instance.currentUser!!.email).withIcon(instance.currentUser!!.photoUrl!!)
             )
 
             .build()
+        //Resources().getDrawable(R.drawable.profile)
+       // DrawerImageLoader.init()
 
         var result= DrawerBuilder().withActivity(this)
             .withTranslucentStatusBar(false)
@@ -91,7 +96,7 @@ class MainActivity : AppCompatActivity() {
         }
      //   DrawerBuilder().withActivity(this).build()
 
-
+        cart_size.text = ShoppingCart.getShoppingCartSize().toString()
         showCart.setOnClickListener {
 
             startActivity(Intent(this, ShoppingCartActivity::class.java))
@@ -133,4 +138,6 @@ class MainActivity : AppCompatActivity() {
             super.onActivityResult(requestCode, resultCode, data)
         }
     }
+
+
 }
