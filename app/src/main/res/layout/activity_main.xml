@@ -36,7 +36,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Products" />
+        android:text="Products"
+        android:shadowColor="@color/md_yellow_600"
+        />
+
     <RelativeLayout
         android:id="@+id/showCart"
         android:layout_width="wrap_content"
