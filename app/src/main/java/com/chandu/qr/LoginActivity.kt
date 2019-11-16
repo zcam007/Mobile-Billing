@@ -25,7 +25,7 @@ class LoginActivity : AppCompatActivity() {
     private var mAuth: FirebaseAuth? = null
     private var etEmail: EditText? = null
     private var etPassword: EditText? = null
-    private var btnSignup: Button?=null
+    private var btnSignup: Button? = null
     //Google Login Request Code
     private val RC_SIGN_IN = 7
     //Google Sign In Client
@@ -50,7 +50,7 @@ class LoginActivity : AppCompatActivity() {
 
         val signInButton = findViewById<View>(R.id.sign_in_button)
         //signInButton.setSize(SignInButton.SIZE_STANDARD)
-       // signInButton.set
+        // signInButton.set
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.default_web_client_id))
             .requestEmail()
@@ -64,10 +64,10 @@ class LoginActivity : AppCompatActivity() {
         btnSignin = findViewById<View>(R.id.login_btn) as Button
         btnSignup = findViewById<View>(R.id.signup_btn) as Button
 
-        signInButton.setOnClickListener{
+        signInButton.setOnClickListener {
             signIn()
         }
-        if(mAuth!=null){
+        if (mAuth != null) {
             val intent = Intent(this@LoginActivity, MainActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
             //startActivity(intent)
@@ -120,12 +120,12 @@ class LoginActivity : AppCompatActivity() {
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
                     startActivity(intent)
                     finish()
-                   // updateUI(user)
+                    // updateUI(user)
                 } else {
                     // If sign in fails, display a message to the user.
                     Log.w("Login", "signInWithCredential:failure", task.exception)
-                    Toast.makeText(this,"Auth Failed",Toast.LENGTH_LONG).show()
-                  //  updateUI(null)
+                    Toast.makeText(this, "Auth Failed", Toast.LENGTH_LONG).show()
+                    //  updateUI(null)
                 }
 
                 // ...
@@ -133,31 +133,30 @@ class LoginActivity : AppCompatActivity() {
     }
 
 
-
-    private fun firebaseSignin(){
+    private fun firebaseSignin() {
 
         email = etEmail?.text.toString()
         password = etPassword?.text.toString()
         mAuth!!.signInWithEmailAndPassword(email!!, password!!)
-               .addOnCompleteListener(this) { task ->
-    if (task.isSuccessful) {
-        // Sign in success, update UI with the signed-in user's information
-     //   Log.d(FragmentActivity.TAG, "signInWithEmail:success")
-        Log.d(TAG, "signInWithEmail:success")
+            .addOnCompleteListener(this) { task ->
+                if (task.isSuccessful) {
+                    // Sign in success, update UI with the signed-in user's information
+                    //   Log.d(FragmentActivity.TAG, "signInWithEmail:success")
+                    Log.d(TAG, "signInWithEmail:success")
 
-       // val user = mAuth.getCurrentUser()
+                    // val user = mAuth.getCurrentUser()
 
-      //  updateUI(user)
-      //  mAuth.currentUser
-        signInSuccess()
-    }
-    else {
-        // If sign in fails, display a message to the user.
-        Log.d(TAG, "signInWithEmail:failure")
-        Toast.makeText(this@LoginActivity, "Authentication failed.", Toast.LENGTH_SHORT).show()
-        // updateUI(null)
-    }
-        }
+                    //  updateUI(user)
+                    //  mAuth.currentUser
+                    signInSuccess()
+                } else {
+                    // If sign in fails, display a message to the user.
+                    Log.d(TAG, "signInWithEmail:failure")
+                    Toast.makeText(this@LoginActivity, "Authentication failed.", Toast.LENGTH_SHORT)
+                        .show()
+                    // updateUI(null)
+                }
+            }
     }
 
 
@@ -168,8 +167,7 @@ class LoginActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    private fun signupPage()
-    {
+    private fun signupPage() {
         val intent = Intent(this@LoginActivity, CreateAccountActivity::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         startActivity(intent)
