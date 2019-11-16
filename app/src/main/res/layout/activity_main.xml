@@ -19,6 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="@dimen/padding_high"
+        android:shadowColor="@color/md_yellow_600"
         android:text="@string/scan_qr_code">
 
     </Button>
