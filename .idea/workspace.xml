@@ -244,10 +244,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="98" />
-    <option name="y" value="55" />
-    <option name="width" value="2491" />
-    <option name="height" value="1340" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
