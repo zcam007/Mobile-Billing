@@ -4,7 +4,9 @@
     android:layout_height="match_parent"
     android:layout_marginTop="20dp"
     android:orientation="vertical"
-    android:padding="@dimen/padding_high">
+    android:padding="@dimen/padding_high"
+
+    >
 
     <TextView
         android:id="@+id/welcomeTag"
@@ -17,6 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="@dimen/padding_high"
+        android:shadowColor="@color/md_yellow_600"
         android:text="@string/scan_qr_code">
 
     </Button>
@@ -33,7 +36,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Products" />
+        android:text="Products"
+        android:shadowColor="@color/md_yellow_600"
+        />
+
     <RelativeLayout
         android:id="@+id/showCart"
         android:layout_width="wrap_content"
