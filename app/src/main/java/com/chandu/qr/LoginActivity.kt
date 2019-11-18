@@ -27,7 +27,7 @@ class LoginActivity : AppCompatActivity() {
     private var etEmail: EditText? = null
     private var etPassword: EditText? = null
     private var btnSignup: Button? = null
-    //private var resetbtn: Button?= null
+    private var resetbtn: Button?= null
     //Google Login Request Code
     private val RC_SIGN_IN = 7
     //Google Sign In Client
@@ -65,7 +65,7 @@ class LoginActivity : AppCompatActivity() {
         etPassword = findViewById<View>(R.id.login_password) as EditText
         btnSignin = findViewById<View>(R.id.login_btn) as Button
         btnSignup = findViewById<View>(R.id.signup_btn) as Button
-        //resetbtn= findViewById<View>(R.id.resetbtn) as Button
+        resetbtn= findViewById<View>(R.id.resetbtn) as Button
 
         signInButton.setOnClickListener {
             signIn()
@@ -81,6 +81,9 @@ class LoginActivity : AppCompatActivity() {
         }
         btnSignup!!.setOnClickListener {
             signupPage()
+        }
+        resetbtn!!.setOnClickListener{
+            resetpage()
         }
 
 
@@ -177,10 +180,10 @@ class LoginActivity : AppCompatActivity() {
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         startActivity(intent)
     }
-   // private fun resetpage() {
-     //   val intent=Intent(this@LoginActivity, ForgotPasswordActivity::class.java)
-       // intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
-        //startActivity(intent)
-   // }
+    private fun resetpage() {
+        val intent=Intent(this@LoginActivity, ForgotPasswordActivity::class.java)
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+        startActivity(intent)
+    }
 
 }
