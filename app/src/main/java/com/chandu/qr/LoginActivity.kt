@@ -82,9 +82,10 @@ class LoginActivity : AppCompatActivity() {
         btnSignup!!.setOnClickListener {
             signupPage()
         }
-        resetbtn!!.setOnClickListener {
+        resetbtn!!.setOnClickListener{
             resetpage()
         }
+
 
     }
 
