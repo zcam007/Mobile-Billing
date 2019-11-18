@@ -1,5 +1,6 @@
 package com.chandu.qr
 
+import android.content.Intent
 import android.graphics.PorterDuff
 import android.os.Bundle
 import android.view.MenuItem
@@ -24,6 +25,23 @@ class ShoppingCartActivity : AppCompatActivity() {
 //        supportActionBar?.setDisplayShowHomeEnabled(true)
 //        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 //
+
+        sharebutton.setOnClickListener {
+
+            val sendIntent: Intent = Intent().apply {
+                action = Intent.ACTION_SEND
+                putExtra(Intent.EXTRA_TEXT, total_price.text)
+                type = "text/plain"
+            }
+
+            val shareIntent = Intent.createChooser(sendIntent, null)
+            startActivity(shareIntent)
+
+
+        }
+
+
+
         val upArrow = ContextCompat.getDrawable(this, R.drawable.abc_ic_ab_back_material)
         upArrow?.setColorFilter(ContextCompat.getColor(this, R.color.colorPrimary), PorterDuff.Mode.SRC_ATOP)
         supportActionBar?.setHomeAsUpIndicator(upArrow)
@@ -40,6 +58,9 @@ class ShoppingCartActivity : AppCompatActivity() {
 
         total_price.text = "$${totalPrice}"
     }
+
+
+
 
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
