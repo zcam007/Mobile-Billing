@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/coordinator"
     android:layout_height="match_parent"
-    android:background="#fffffa"
+    android:background="@drawable/design6"
     android:layout_width="match_parent">
 
 
@@ -17,11 +17,11 @@
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
-            app:titleTextColor="@color/colorAccent"
-            app:title="Shopping List"
-            android:background="@android:color/white"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"/>
+            android:layout_height="?attr/actionBarSize"
+            android:background="#00B0FF"
+            app:title="Shopping List"
+            app:titleTextColor="#FF1744" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
