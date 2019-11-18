@@ -59,23 +59,24 @@
 
         <TextView
             android:id="@+id/totalLabel"
-            android:layout_width="97dp"
-            android:layout_height="52dp"
+            android:layout_width="50dp"
+            android:layout_height="24dp"
             android:layout_marginStart="6dp"
             android:layout_marginTop="14dp"
             android:text="Total"
-            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/total_price"
-            android:layout_width="51dp"
-            android:layout_height="26dp"
+            android:layout_width="104dp"
+            android:layout_height="31dp"
             android:layout_marginTop="16dp"
-            android:textColor="@android:color/white"
-            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/totalLabel"
             app:layout_constraintTop_toTopOf="parent"
@@ -83,19 +84,19 @@
 
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="91dp"
+            android:layout_height="42dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginStart="144dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="4dp"
             android:background="@drawable/round_background"
             android:padding="10dp"
             android:text="Checkout"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textSize="19sp"
+            android:textSize="14sp"
             app:layout_constraintStart_toEndOf="@+id/total_price"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -103,9 +104,11 @@
             android:id="@+id/sharebutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="48dp"
-            android:layout_marginTop="8dp"
-            android:text="Share "
+            android:layout_marginStart="16dp"
+            android:background="@drawable/round_background"
+            android:text="@string/sharebutton"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
             app:layout_constraintStart_toEndOf="@+id/total_price"
             app:layout_constraintTop_toTopOf="parent" />
 
