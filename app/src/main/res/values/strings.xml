@@ -6,17 +6,20 @@
     <string name="last_name">Last Name</string>
     <string name="login_title">Login</string>
     <string name="create_act">Create Account</string>
-
-
+    <string name="login_password">Enter your password here</string>
+    <string name="signup_btn">Sign Up</string>
     <string name="showing_code_in_fragment">Showing code in fragment</string>
     <string name="scan_qr_code">SCAN QR CODE</string>
     <string name="name">Name</string>
     <string name="empty">---</string>
     <string name="site_name">Site Name</string>
     <string name="scan_a_code">Scan a QR Code</string>
+    <string name="login_email">Enter your email here</string>
     <string name="result_not_found">Result Not Found</string>
     <string name="show_scanner_from_fragment">Show Scanner From Fragment</string>
     <string name="reset_password_link">Reset Password Link</string>
     <string name="reset_password">Reset</string>
+    <string name="sharebutton">Share Receipt</string>
+    <string name="productsPage">Products</string>
 
 </resources>
