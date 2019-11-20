@@ -6,6 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#C8EAF0">
+    android:background="@drawable/design6"
+    android:layout_width="match_parent">
+
 
 
     <com.google.android.material.appbar.AppBarLayout
@@ -21,6 +24,9 @@
             android:background="#FAC9BB"
             app:title="Shopping List"
             app:titleTextColor="@color/colorAccent" />
+            android:background="#00B0FF"
+            app:title="Shopping List"
+            app:titleTextColor="#FF1744" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
