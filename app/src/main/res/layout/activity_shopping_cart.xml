@@ -16,27 +16,26 @@
             android:layout_height="?attr/actionBarSize">
 
         <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                app:titleTextColor="@color/colorAccent"
-                app:title="Shopping Cart"
-                android:background="@android:color/white"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"/>
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#CFF3B1"
+            app:title="Shopping Cart"
+            app:titleTextColor="@color/colorAccent" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
 
     <androidx.recyclerview.widget.RecyclerView
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            android:id="@+id/shopping_cart_recyclerView"
-            android:layout_margin="2dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-
+        android:id="@+id/shopping_cart_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+        android:background="#BBF8F8"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     <RelativeLayout
             android:padding="8dp"
-            app:elevation="4dp"
             android:layout_gravity="bottom"
             android:elevation="15dp"
             android:background="@color/colorAccent"
