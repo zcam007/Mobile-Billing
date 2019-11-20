@@ -17,9 +17,6 @@
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="#CFF3B1"
             android:layout_width="162dp"
             android:layout_height="?attr/actionBarSize"
             android:background="@android:color/white"
@@ -45,8 +42,9 @@
             android:background="@color/colorAccent"
             android:layout_width="match_parent"
             android:layout_height="66dp"
-            tools:targetApi="lollipop">
+            tools:targetApi="lollipop"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/relativeLayout"
@@ -56,7 +54,7 @@
         android:background="@color/colorAccent"
         android:elevation="15dp"
         android:padding="8dp"
-        app:elevation="4dp"
+
         tools:targetApi="lollipop">
 
 
