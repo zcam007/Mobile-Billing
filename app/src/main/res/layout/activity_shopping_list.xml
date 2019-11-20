@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/coordinator"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C8EAF0">
     android:background="@drawable/design6"
     android:layout_width="match_parent">
 
 
+
     <com.google.android.material.appbar.AppBarLayout
-        android:background="@android:color/transparent"
-        android:fitsSystemWindows="true"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize">
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:fitsSystemWindows="true">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
+            android:background="#FAC9BB"
+            app:title="Shopping List"
+            app:titleTextColor="@color/colorAccent" />
             android:background="#00B0FF"
             app:title="Shopping List"
             app:titleTextColor="#FF1744" />
@@ -28,62 +33,59 @@
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipeRefreshLayout"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/products_recyclerview"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent" />
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/qrScanButton"
-        android:src="@drawable/qrcode_scan"
-        android:tint="@android:color/white"
-        app:fabSize="normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:layout_margin="16dp"
-        />
+        android:src="@drawable/qrcode_scan"
+        android:tint="@android:color/white"
+        app:fabSize="normal" />
 
     <RelativeLayout
         android:id="@+id/showCart"
-        android:layout_margin="16dp"
-        android:layout_gravity="bottom|end"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp">
 
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/basketButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:src="@drawable/ic_shopping_basket"
             android:tint="@android:color/white"
-            app:fabSize="normal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            app:fabSize="normal" />
 
         <TextView
-            android:padding="8dp"
-            android:layout_marginBottom="25dp"
-            android:elevation="50dp"
-            android:layout_marginStart="5dp"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"
-            android:layout_alignRight="@id/basketButton"
             android:id="@+id/cart_size"
-            android:textSize="13sp"
-            android:background="@drawable/item_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignEnd="@id/basketButton"
-            tools:targetApi="lollipop"
-            android:layout_marginLeft="15dp"/>
+            android:layout_alignRight="@id/basketButton"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/item_count"
+            android:elevation="50dp"
+            android:padding="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            tools:targetApi="lollipop" />
 
     </RelativeLayout>
 

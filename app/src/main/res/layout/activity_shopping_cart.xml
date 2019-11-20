@@ -17,9 +17,13 @@
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#CFF3B1"
             android:layout_width="162dp"
             android:layout_height="?attr/actionBarSize"
             android:background="@android:color/white"
+
             app:title="Shopping Cart"
             app:titleTextColor="@color/colorAccent" />
 
@@ -30,6 +34,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="2dp"
+
+        android:background="#BBF8F8"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <RelativeLayout
+            android:padding="8dp"
+            android:layout_gravity="bottom"
+            android:elevation="15dp"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            tools:targetApi="lollipop">
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -42,6 +58,7 @@
         android:padding="8dp"
         app:elevation="4dp"
         tools:targetApi="lollipop">
+
 
 
         <LinearLayout
