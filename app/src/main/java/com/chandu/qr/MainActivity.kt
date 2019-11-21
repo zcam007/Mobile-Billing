@@ -83,9 +83,9 @@ class MainActivity : AppCompatActivity() {
             .withAccountHeader(headerResult)
 
             .addDrawerItems(
-                 PrimaryDrawerItem().withName("Hello"),
+                 PrimaryDrawerItem().withName("Shopping List"),
                  DividerDrawerItem(),
-                 SecondaryDrawerItem().withName("Menu item2")
+                 SecondaryDrawerItem().withName("Cart")
             )
                     .build()
 
