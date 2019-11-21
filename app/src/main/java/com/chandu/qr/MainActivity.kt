@@ -26,6 +26,7 @@ import android.graphics.drawable.Drawable
 import com.mikepenz.materialdrawer.util.AbstractDrawerImageLoader
 import android.net.Uri
 import android.widget.ImageView
+import com.google.firebase.database.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -41,7 +42,7 @@ class MainActivity : AppCompatActivity() {
     private var products = listOf<Product>()
     private lateinit var productAdapter: ProductAdapter
     private var welcomeName: TextView?= null
-
+    private lateinit var database: DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -111,11 +112,34 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        database = FirebaseDatabase.getInstance().reference
+        var mMainMenuRef = database.child("/")
+        var instance= FirebaseAuth.getInstance()
         val result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data)
         if (result != null) {
             // If QRCode has no data.
             if (result.contents == null) {
+                var count=0
+                database.addValueEventListener(object : ValueEventListener {
+                    override fun onCancelled(p0: DatabaseError) {
+                        print("Error fetching data from firebase")
+                          }
+                    override fun onDataChange(p0: DataSnapshot) {
+                        var children=p0!!.children
+                        children.forEach { println("hello"+it.value.toString())
+                            count++
+                        }
+
+                    }
+                })
+
+                println("COUNTTTTTTT"+count)
                 Toast.makeText(this, getString(R.string.result_not_found), Toast.LENGTH_LONG).show()
+                val key = database.child("/").push().key
+                println("KEYYYY"+key)
+                var newProduct=Product(23,"test","2.33","asdd","https://image.shutterstock.com/image-photo/isolated-apples-whole-red-apple-260nw-575378506.jpg")
+                database.child("/").child("3").setValue(newProduct)
+
             } else {
                 // If QRCode contains data.
                 try {
