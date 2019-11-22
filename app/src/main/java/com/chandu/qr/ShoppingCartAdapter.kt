@@ -28,9 +28,13 @@ class ShoppingCartAdapter(var context: Context, var cartItems: List<CartItem>) :
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
         fun bindItem(cartItem: CartItem) {
+            var urlFromDB=cartItem.product.imageURL
+            if(cartItem.product.imageURL=="" || cartItem.product.imageURL==null){
+                urlFromDB="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/12_powerhouse_vegetables_slideshow/intro_cream_of_crop.jpg"
+            }
+            //Picasso.get().load(urlFromDB).fit().into(itemView.product_image)
 
-
-          //  Picasso.get().load(cartItem.product.photos[0].filename).fit().into(itemView.product_image)
+            Picasso.get().load(urlFromDB).fit().into(itemView.product_image)
 
 
                 itemView.product_name.text = cartItem.product.name

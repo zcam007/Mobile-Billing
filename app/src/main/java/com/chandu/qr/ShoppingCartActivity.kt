@@ -10,6 +10,7 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_shopping_cart.*
+import kotlin.math.roundToInt
 
 class ShoppingCartActivity : AppCompatActivity() {
 
@@ -55,9 +56,9 @@ class ShoppingCartActivity : AppCompatActivity() {
         shopping_cart_recyclerView.layoutManager = LinearLayoutManager(this) as RecyclerView.LayoutManager?
         var totalPrice = ShoppingCart.getCart()
             .fold(0.toDouble()) { acc, cartItem -> acc + cartItem.quantity.times(cartItem.product.price!!.toDouble()) }
+        val priceTwoDigits:Double = Math.round(totalPrice * 100.0) / 100.0
 
-
-        total_price.text = "$${totalPrice}"
+        total_price.text = "$${priceTwoDigits}"
     }
 
 
