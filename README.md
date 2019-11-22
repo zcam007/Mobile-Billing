@@ -7,4 +7,6 @@ This app is used to do billing from mobile using barcode. The customer scans the
  - QR Code Scanning
  - Payment Method Storage
  - Simple UI
+ 
+ <br>
 
