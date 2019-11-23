@@ -9,8 +9,8 @@
 
     <EditText
         android:id="@+id/login_email"
-        android:layout_width="287dp"
-        android:layout_height="52dp"
+        android:layout_width="282dp"
+        android:layout_height="47dp"
         android:layout_marginTop="160dp"
         android:layout_marginEnd="24dp"
         android:ems="10"
@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="176dp"
+        android:layout_marginTop="174dp"
         android:backgroundTint="#FFFFFF"
         android:fontFamily="Helvetica"
         android:text="@string/email"
