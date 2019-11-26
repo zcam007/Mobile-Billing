@@ -40,7 +40,11 @@ class ProductAdapter(var context: Context, private var products: List<Product> =
 
 //            Picasso.get().load(product.photos[0].filename).fit().into(itemView.product_image)
 var url="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/12_powerhouse_vegetables_slideshow/intro_cream_of_crop.jpg"
-            Picasso.get().load(url).fit().into(itemView.product_image)
+            var urlFromDB=product.imageURL
+            if(product.imageURL=="" || product.imageURL==null){
+                urlFromDB="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/12_powerhouse_vegetables_slideshow/intro_cream_of_crop.jpg"
+            }
+            Picasso.get().load(urlFromDB).fit().into(itemView.product_image)
 
 
             //                val products = mutableListOf<Product>()
