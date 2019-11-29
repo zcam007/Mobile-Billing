@@ -9,7 +9,7 @@
 
     <EditText
         android:id="@+id/login_email"
-        android:layout_width="282dp"
+        android:layout_width="266dp"
         android:layout_height="47dp"
         android:layout_marginTop="160dp"
         android:layout_marginEnd="24dp"
@@ -26,19 +26,19 @@
         android:id="@+id/emailPlaceholder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="174dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="175dp"
         android:backgroundTint="#FFFFFF"
         android:fontFamily="Helvetica"
         android:text="@string/email"
-        android:textColor="#52bba3"
+        android:textColor="#2adea4"
         android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/login_password"
-        android:layout_width="282dp"
+        android:layout_width="270dp"
         android:layout_height="47dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
@@ -55,12 +55,12 @@
         android:id="@+id/passwordPlaceholder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="35dp"
         android:backgroundTint="#FFFFFF"
         android:fontFamily="Helvetica"
         android:text="@string/password"
-        android:textColor="#75e6b2"
+        android:textColor="#2adea4"
         android:textColorHint="#FFFFFF"
         android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,7 +68,7 @@
 
     <Button
         android:id="@+id/login_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
         android:background="#FFFFFF"
@@ -80,7 +80,7 @@
 
     <Button
         android:id="@+id/signup_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:background="#FFFFFF"
@@ -102,14 +102,15 @@
 
     <Button
         android:id="@+id/resetbtn"
-        android:layout_width="147dp"
+        android:layout_width="160dp"
         android:layout_height="55dp"
         android:layout_marginBottom="72dp"
         android:background="#FFFFFF"
         android:text="Reset Password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
