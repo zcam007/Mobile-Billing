@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:background="@drawable/design9"
     android:orientation="vertical"
     android:padding="@dimen/padding_high">
@@ -13,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,8 +22,8 @@
         android:id="@+id/btnScan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="36dp"
         android:background="#FFFFFF"
         android:text="@string/scan_qr_code"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,8 +46,8 @@
         android:id="@+id/productsPage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
         android:background="#FFFFFF"
         android:text="@string/productsPage"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,48 +55,42 @@
 
     <RelativeLayout
         android:id="@+id/showCart"
-        android:layout_width="56dp"
-        android:layout_height="36dp"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="16dp"
-        android:layout_marginStart="219dp"
-        android:layout_marginTop="95dp"
-        android:layout_marginEnd="309dp"
-        android:layout_marginBottom="79dp"
-        app:layout_constraintBottom_toTopOf="@+id/basketButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.676"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/productsPage"
-        app:layout_constraintVertical_bias="1.0">
-
-
-    </RelativeLayout>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/basketButton"
-        android:layout_width="75dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="56dp"
-        android:src="@drawable/ic_shopping_basket"
-        android:tint="@android:color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/productsPage" />
-
-    <TextView
-        android:id="@+id/cart_size"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
-        android:background="@drawable/item_count"
-        android:elevation="50dp"
-        android:padding="8dp"
-        android:textColor="@android:color/white"
-        android:textSize="13sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/basketButton"
-        app:layout_constraintTop_toBottomOf="@+id/productsPage" />
+        android:layout_gravity="bottom|end"
+        android:layout_marginTop="175dp"
+        app:layout_constraintEnd_toStartOf="@+id/productsPage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/productsPage"
+        app:layout_constraintTop_toBottomOf="@+id/showQRScanner">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/basketButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_shopping_basket"
+            android:tint="@android:color/white"
+            app:fabSize="normal" />
+
+        <TextView
+            android:id="@+id/cart_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/basketButton"
+            android:layout_alignRight="@id/basketButton"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/item_count"
+            android:elevation="50dp"
+            android:padding="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            tools:targetApi="lollipop" />
+
+    </RelativeLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
