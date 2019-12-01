@@ -12,3 +12,4 @@ This app is used to do billing from mobile using barcode. The customer scans the
 - Track billing/invoice information, Order Summary, 
 - QR Code Scanning
 - Payment Method Storage
+- Manage customer information
