@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/design7"
+    android:background="@drawable/design12"
     tools:context=".LoginActivity">
 
     <EditText
@@ -70,11 +70,11 @@
         android:id="@+id/login_btn"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="24dp"
         android:background="#FFFFFF"
         android:text="@string/common_signin_button_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintHorizontal_bias="0.119"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_password" />
 
@@ -82,12 +82,12 @@
         android:id="@+id/signup_btn"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="148dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
         android:background="#FFFFFF"
         android:text="@string/signup_btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_btn" />
+        app:layout_constraintTop_toBottomOf="@+id/login_password" />
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/sign_in_button"
@@ -103,12 +103,12 @@
         android:id="@+id/resetbtn"
         android:layout_width="160dp"
         android:layout_height="55dp"
-        android:layout_marginBottom="132dp"
+        android:layout_marginBottom="236dp"
         android:background="#FFFFFF"
         android:text="Reset Password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintHorizontal_bias="0.541"
         app:layout_constraintStart_toStartOf="parent" />
 
 
