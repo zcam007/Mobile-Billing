@@ -26,6 +26,6 @@ This application can be used by customers for self checkout while shopping. The 
 
 #### Receivables
 
-- Manage  
-- Create invoices with ease
-- Keep track of payments received, and get notifications on your phone when a new payment from a customer comes in
+- Manage products and customer
+- Create invoice
+- Keep track of payments received
