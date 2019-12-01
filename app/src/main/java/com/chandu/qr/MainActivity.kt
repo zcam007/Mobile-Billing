@@ -119,15 +119,10 @@ class MainActivity : AppCompatActivity() {
         if (result != null) {
             // If QRCode has no data.
             if (result.contents == null) {
-
-
-
-                Toast.makeText(this, getString(R.string.result_not_found), Toast.LENGTH_LONG).show()
+             Toast.makeText(this, getString(R.string.result_not_found), Toast.LENGTH_LONG).show()
                 val key = database.child("/").push().key
-                println("KEYYYY"+key)
             //    var newProduct=Product(23,"test","2.33","asdd","https://image.shutterstock.com/image-photo/isolated-apples-whole-red-apple-260nw-575378506.jpg")
 //                database.child("/").child("3").setValue(newProduct)
-              //  database.child("/").push().setValue(newProduct)
 
             } else {
                 // If QRCode contains data.
@@ -140,9 +135,6 @@ class MainActivity : AppCompatActivity() {
                     var descFromQR=obj.getString("description")
                     var imageFromQR=obj.getString("imageURL")
                     var priceFromQR=obj.getString("price")
-
-                    // println("idFromQR "+idFromQR)
-
                     database.addListenerForSingleValueEvent(object : ValueEventListener {
                         override fun onCancelled(p0: DatabaseError) {
                             print("Error fetching data from firebase")

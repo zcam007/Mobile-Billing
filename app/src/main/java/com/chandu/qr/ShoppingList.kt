@@ -47,10 +47,6 @@ class ShoppingList : AppCompatActivity() {
         database = FirebaseDatabase.getInstance().reference
         var mMainMenuRef = database.child("/")
         var instance= FirebaseAuth.getInstance()
-        println("helllooooo")
-        println( "YAYAYAYAYAYAYAYAYAYAYAYA: "+instance.currentUser!!.email)
-
-        println("this made is made by charan")
         mMainMenuRef.addListenerForSingleValueEvent(object :ValueEventListener {
             override fun onCancelled(p0: DatabaseError) {
                 print("Error fetching data from firebase")
