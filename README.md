@@ -21,8 +21,9 @@ This application can be used by customers for self checkout while shopping. The 
 
 #### Payable
 
-- Access your payment and approval history
-- Pay bills quickly and easily
+- Access your payment history
+- Checkout quickly and easily
+- Multiple payment options
 
 #### Receivables
 
