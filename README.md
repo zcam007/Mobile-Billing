@@ -4,6 +4,14 @@ This application can be used by customers for self checkout while shopping. The 
 
 <br>
 
+### Functional Requirement
+
+- Scan a barcode/QR code on the product
+- Identify the product and price
+- Add/Modify Payment Method
+- Calculate the sub-totals, taxes and total price
+- Accept payment and complete purchase
+
 ### User Requirements
 - Mobile Device
 - Android OS
@@ -19,7 +27,7 @@ This application can be used by customers for self checkout while shopping. The 
 - Payment Method Storage
 - Manage customer information
 
-#### Payable
+#### Payables
 
 - Access your payment history
 - Checkout quickly and easily
