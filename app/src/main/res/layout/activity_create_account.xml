@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/design4"
+    android:background="@drawable/design6"
     tools:context=".CreateAccountActivity">
 
     <EditText
@@ -96,7 +96,7 @@
         android:layout_marginTop="264dp"
         android:layout_marginEnd="193dp"
         android:layout_marginBottom="464dp"
-        android:background="#DF3D5AFE"
+        android:background="#C51162"
         android:text="@string/create_act"
         android:textColor="@android:color/white"
         android:textStyle="bold"
