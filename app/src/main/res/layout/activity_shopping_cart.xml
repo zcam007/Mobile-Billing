@@ -12,14 +12,14 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@android:color/transparent"
+        android:background="#3181B3"
         android:fitsSystemWindows="true">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="162dp"
             android:layout_height="?attr/actionBarSize"
-            android:background="@android:color/white"
+            android:background="#EDF0F3"
 
             app:title="Shopping Cart"
             app:titleTextColor="@color/colorAccent" />
@@ -32,7 +32,7 @@
         android:layout_height="match_parent"
         android:layout_margin="2dp"
 
-        android:background="#BBF8F8"
+        android:background="@drawable/design10"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     <RelativeLayout

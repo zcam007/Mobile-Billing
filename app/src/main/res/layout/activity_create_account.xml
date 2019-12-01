@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/design4"
+    android:background="@drawable/design11"
     tools:context=".CreateAccountActivity">
 
     <EditText
@@ -17,10 +17,10 @@
         android:ems="10"
         android:fontFamily="Helvetica"
         android:hint="@string/first_name"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
-        android:importantForAutofill="no"
         app:layout_constraintBottom_toTopOf="@+id/et_last_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,6 +37,7 @@
         android:ems="10"
         android:fontFamily="Helvetica"
         android:hint="@string/last_name"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
@@ -44,7 +45,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        android:importantForAutofill="no"
         app:layout_constraintTop_toBottomOf="@+id/et_first_name" />
 
     <EditText
@@ -58,13 +58,13 @@
         android:ems="10"
         android:fontFamily="Helvetica"
         android:hint="@string/email"
+        android:importantForAutofill="no"
         android:inputType="textEmailAddress"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/et_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:importantForAutofill="no"
         app:layout_constraintTop_toBottomOf="@+id/et_last_name" />
 
     <EditText
@@ -77,14 +77,14 @@
         android:ems="10"
         android:fontFamily="Helvetica"
         android:hint="@string/password"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/btn_register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_email"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/et_email" />
 
     <Button
         android:id="@+id/btn_register"
@@ -96,7 +96,7 @@
         android:layout_marginTop="264dp"
         android:layout_marginEnd="193dp"
         android:layout_marginBottom="464dp"
-        android:background="#DF3D5AFE"
+        android:background="#523208"
         android:text="@string/create_act"
         android:textColor="@android:color/white"
         android:textStyle="bold"
