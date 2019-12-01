@@ -18,3 +18,8 @@ This application can be used by customers for self checkout while shopping. The 
 - QR Code Scanning
 - Payment Method Storage
 - Manage customer information
+
+#### Payable
+
+- Access your payment and approval history
+- Pay bills quickly and easily
