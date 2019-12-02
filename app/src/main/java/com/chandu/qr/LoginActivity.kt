@@ -77,7 +77,10 @@ class LoginActivity : AppCompatActivity() {
             //finish()
         }
         btnSignin!!.setOnClickListener {
-            firebaseSignin()
+            if(etEmail?.text.toString()!=""&&etPassword?.text.toString()!="") {
+                firebaseSignin()
+            }
+
         }
         btnSignup!!.setOnClickListener {
             signupPage()
