@@ -19,7 +19,7 @@
     <string name="show_scanner_from_fragment">Show Scanner From Fragment</string>
     <string name="reset_password_link">Reset Password Link</string>
     <string name="reset_password">Reset</string>
-    <string name="sharebutton">Share Receipt</string>
+    <string name="sharebutton">Share</string>
     <string name="productsPage">Products</string>
 
 </resources>
