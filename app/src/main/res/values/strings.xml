@@ -24,5 +24,6 @@
     <string name="textView3">Sign in with Google</string>
     <string name="resetbtn">Reset Password</string>
     <string name="textView5">OR</string>
+    <string name="textView6">Quantity</string>
 
 </resources>
