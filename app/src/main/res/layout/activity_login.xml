@@ -20,7 +20,8 @@
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" tools:targetApi="o"/>
 
     <TextView
         android:id="@+id/emailPlaceholder"
@@ -50,7 +51,8 @@
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_email" />
+        app:layout_constraintTop_toBottomOf="@+id/login_email"
+        android:autofillHints="" tools:targetApi="o"/>
 
     <TextView
         android:id="@+id/passwordPlaceholder"
