@@ -38,3 +38,11 @@ This application can be used by customers for self checkout while shopping. The 
 - Manage products and customer
 - Create invoice
 - Keep track of payments received
+
+#### DFD Diagrams
+- DFD level-0
+![Image](DFD0.jpg)
+
+- DFD level-1
+![Image1](DFD1.jpg)
+
