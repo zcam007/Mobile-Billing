@@ -13,7 +13,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background=" #ff9068"
+        android:background="#3181B3"
         android:fitsSystemWindows="true">
 
         <androidx.appcompat.widget.Toolbar
@@ -70,24 +70,24 @@
             app:backgroundTint="#0288D1"
             app:fabSize="normal" />
 
-        <TextView
-            android:id="@+id/cart_size"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignEnd="@id/basketButton"
-            android:layout_alignRight="@id/basketButton"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginBottom="25dp"
-            android:background="@drawable/item_count"
-            android:elevation="50dp"
-            android:padding="8dp"
-            android:textColor="@android:color/white"
-            android:textSize="13sp"
-            android:textStyle="bold"
-            tools:targetApi="lollipop" />
-
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/cart_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/item_count"
+        android:elevation="50dp"
+        android:padding="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_anchor="@+id/showCart"
+        app:layout_anchorGravity="end|top"
+        tools:targetApi="lollipop" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
