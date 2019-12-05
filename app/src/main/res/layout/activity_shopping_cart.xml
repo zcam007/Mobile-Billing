@@ -32,7 +32,7 @@
         android:layout_height="match_parent"
         android:layout_margin="1dp"
 
-        android:background="@drawable/gradient4"
+        android:background="@drawable/gradient3"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     <RelativeLayout
