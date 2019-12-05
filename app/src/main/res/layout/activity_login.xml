@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/design12"
+    android:background="@drawable/gradient1"
     tools:context=".LoginActivity">
 
     <EditText
@@ -31,7 +31,7 @@
         android:backgroundTint="#FFFFFF"
         android:fontFamily="Helvetica"
         android:text="@string/email"
-        android:textColor="#2adea4"
+        android:textColor="#FFFFFF"
         android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -60,7 +60,7 @@
         android:backgroundTint="#FFFFFF"
         android:fontFamily="Helvetica"
         android:text="@string/password"
-        android:textColor="#2adea4"
+        android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
