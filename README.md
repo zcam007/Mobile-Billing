@@ -1,6 +1,6 @@
 # Mobile-Billing App
 <br>
-This application can be used by customers for self checkout while shopping. The customer downloads the app from the Android Marketplace (App Store) and scans the items for self checkout without waiting in line to bill items in their cart. It's like having a personal checkout assistant.
+This application can be used by customers for self checkout while shopping. The customer downloads the app from the Android Marketplace (Play Store) and scans the items for self checkout without waiting in line to bill items in their cart. It's like having a personal checkout assistant.
 
 <br>
 
