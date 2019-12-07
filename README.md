@@ -28,7 +28,7 @@ In this NoSQL database, we have created some columns such as description, id, im
 - imageURL : This acts as an image source for the products.
 <br>
 - Database Structure <br>
-![Image2](Database.png)
+![Image2](https://github.com/Charan16597/Mobile-Billing/blob/master/Database.png)
 
 
 
