@@ -24,6 +24,7 @@ For this Application we have used the Google Firebase Realtime Database. The Fir
 In this NoSQL database, we have created some columns such as description, id, imageURL, name and price where each individual column has its own individual action performed in the database.
 <br>
 - Description:  It gives a brief introduction about the item.
+- id: It is a primary key.
 
 
 
