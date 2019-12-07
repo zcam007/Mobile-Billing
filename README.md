@@ -17,6 +17,8 @@ In Today’s world, People’s lives are mainly dependent on the mobile phones.I
 - Android OS
 - Application installed and compatible with user's android version
 
+### Database Design
+
 ### App Features
 
 #### Workflow
