@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/design12"
+    android:background="@drawable/gradient5"
     tools:context=".LoginActivity">
 
     <EditText
@@ -14,13 +14,14 @@
         android:layout_marginTop="160dp"
         android:layout_marginEnd="24dp"
         android:ems="10"
-        android:fontFamily="Helvetica"
+        android:fontFamily="sans-serif"
         android:hint="@string/login_email"
         android:inputType="textEmailAddress"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" tools:targetApi="o"/>
 
     <TextView
         android:id="@+id/emailPlaceholder"
@@ -29,10 +30,11 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="175dp"
         android:backgroundTint="#FFFFFF"
-        android:fontFamily="Helvetica"
+        android:fontFamily="sans-serif"
         android:text="@string/email"
-        android:textColor="#2adea4"
-        android:textStyle="bold|italic"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -43,26 +45,28 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:ems="10"
-        android:fontFamily="Helvetica"
+        android:fontFamily="sans-serif"
         android:hint="@string/login_password"
         android:inputType="textPassword"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_email" />
+        app:layout_constraintTop_toBottomOf="@+id/login_email"
+        android:autofillHints="" tools:targetApi="o"/>
 
     <TextView
         android:id="@+id/passwordPlaceholder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
         android:backgroundTint="#FFFFFF"
-        android:fontFamily="Helvetica"
+        android:fontFamily="sans-serif"
         android:text="@string/password"
-        android:textColor="#2adea4"
+        android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
-        android:textStyle="bold|italic"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_email" />
 

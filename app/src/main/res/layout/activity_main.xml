@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
+    android:background="@drawable/gradient1"
     android:orientation="vertical"
     android:padding="@dimen/padding_high">
 
@@ -14,7 +14,9 @@
         android:layout_height="35dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="32dp"
-        android:textColor="#800E0E"
+        android:fontFamily="sans-serif"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -69,8 +71,9 @@
             android:id="@+id/basketButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_shopping_basket"
+            android:src="@drawable/scart"
             android:tint="@android:color/white"
+            app:backgroundTint="#FF1744"
             app:fabSize="normal" />
 
         <TextView
