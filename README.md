@@ -28,7 +28,7 @@ In this NoSQL database, we have created some columns such as description, id, im
 - imageURL : This acts as an image source for the products.
 <br>
 - Database Structure <br>
-![Image2](/Users/charan/Downloads/Database.png)
+![Image2](Database.png)
 
 
 
