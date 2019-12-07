@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/design12"
+    android:background="@drawable/design7"
     tools:context=".LoginActivity">
 
     <EditText
@@ -14,6 +14,7 @@
         android:layout_marginTop="160dp"
         android:layout_marginEnd="24dp"
         android:ems="10"
+        android:background="@drawable/textinputborder"
         android:fontFamily="Helvetica"
         android:hint="@string/login_email"
         android:inputType="textEmailAddress"
@@ -43,6 +44,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:ems="10"
+        android:background="@drawable/textinputborder"
         android:fontFamily="Helvetica"
         android:hint="@string/login_password"
         android:inputType="textPassword"
@@ -66,15 +68,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_email" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/login_btn"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="40dp"
         android:background="#FFFFFF"
         android:text="@string/common_signin_button_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintHorizontal_bias="0.563"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_password" />
 
@@ -82,38 +84,12 @@
         android:id="@+id/signup_btn"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="148dp"
         android:background="#FFFFFF"
         android:text="@string/signup_btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_password" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="190dp"
-        android:layout_marginTop="49dp"
-        android:text="@string/textView5"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resetbtn" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="225dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="112dp"
-        android:text="@string/textView3"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resetbtn" />
+        app:layout_constraintTop_toBottomOf="@+id/login_btn" />
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/sign_in_button"
@@ -129,12 +105,12 @@
         android:id="@+id/resetbtn"
         android:layout_width="160dp"
         android:layout_height="55dp"
-        android:layout_marginBottom="272dp"
+        android:layout_marginBottom="132dp"
         android:background="#FFFFFF"
-        android:text="@string/resetbtn"
+        android:text="Reset Password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintHorizontal_bias="0.556"
         app:layout_constraintStart_toStartOf="parent" />
 
 

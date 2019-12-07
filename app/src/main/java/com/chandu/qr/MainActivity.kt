@@ -119,33 +119,37 @@ class MainActivity : AppCompatActivity() {
         if (result != null) {
             // If QRCode has no data.
             if (result.contents == null) {
-                var count=0
-                database.addValueEventListener(object : ValueEventListener {
-                    override fun onCancelled(p0: DatabaseError) {
-                        print("Error fetching data from firebase")
-                          }
-                    override fun onDataChange(p0: DataSnapshot) {
-                        var children=p0!!.children
-                        children.forEach { println("hello"+it.value.toString())
-                            count++
-                        }
-
-                    }
-                })
-
-                println("COUNTTTTTTT"+count)
-                Toast.makeText(this, getString(R.string.result_not_found), Toast.LENGTH_LONG).show()
+             Toast.makeText(this, getString(R.string.result_not_found), Toast.LENGTH_LONG).show()
                 val key = database.child("/").push().key
-                println("KEYYYY"+key)
-                var newProduct=Product(23,"test","2.33","asdd","https://image.shutterstock.com/image-photo/isolated-apples-whole-red-apple-260nw-575378506.jpg")
-                database.child("/").child("3").setValue(newProduct)
+            //    var newProduct=Product(23,"test","2.33","asdd","https://image.shutterstock.com/image-photo/isolated-apples-whole-red-apple-260nw-575378506.jpg")
+//                database.child("/").child("3").setValue(newProduct)
 
             } else {
                 // If QRCode contains data.
                 try {
                     // Converting the data to json format
                     val obj = JSONObject(result.contents)
+                    var count=0
+                    var idFromQR=obj.getInt("id")
+                    var nameFromQR=obj.getString("name")
+                    var descFromQR=obj.getString("description")
+                    var imageFromQR=obj.getString("imageURL")
+                    var priceFromQR=obj.getString("price")
+                    database.addListenerForSingleValueEvent(object : ValueEventListener {
+                        override fun onCancelled(p0: DatabaseError) {
+                            print("Error fetching data from firebase")
+                        }
+                        override fun onDataChange(p0: DataSnapshot) {
+                            var children=p0!!.children
+                            children.forEach { println("hello"+it.value.toString())
+                                count++
+                            }
+                            var newProduct=Product(idFromQR,nameFromQR,priceFromQR,descFromQR,imageFromQR)
+                            database.child("/").child(count.toString()).setValue(newProduct)
+                        }
+                    })
 
+                    Toast.makeText(this, "Added Successfully", Toast.LENGTH_LONG).show()
                     // Show values in UI.
                  //   txtName?.text = obj.getString("name")
                    // txtSiteName?.text = obj.getString("site_name")

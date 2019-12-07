@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:background="@drawable/design4"
-        android:layout_height="match_parent"
+
+    android:layout_height="match_parent"
         tools:context=".ShoppingCartActivity">
 
 
@@ -19,10 +20,9 @@
             android:id="@+id/toolbar"
             android:layout_width="162dp"
             android:layout_height="?attr/actionBarSize"
-            android:background="#EDF0F3"
 
             app:title="Shopping Cart"
-            app:titleTextColor="@color/colorAccent" />
+            app:titleTextColor="@color/md_white_1000" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -30,16 +30,16 @@
         android:id="@+id/shopping_cart_recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="2dp"
+        android:layout_margin="1dp"
 
-        android:background="@drawable/design10"
+        android:background="@drawable/gradient"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     <RelativeLayout
             android:padding="8dp"
             android:layout_gravity="bottom"
             android:elevation="15dp"
-            android:background="@color/colorAccent"
+            android:background="@drawable/gradient"
             android:layout_width="match_parent"
             android:layout_height="66dp"
             tools:targetApi="lollipop"
@@ -51,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="66dp"
         android:layout_gravity="bottom"
-        android:background="@color/colorAccent"
+        android:background="@color/md_white_1000"
         android:elevation="15dp"
         android:padding="8dp"
 
@@ -79,7 +79,7 @@
             android:layout_marginStart="6dp"
             android:layout_marginTop="14dp"
             android:text="Total"
-            android:textColor="#FFFFFF"
+            android:textColor="#000000"
             android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -90,7 +90,7 @@
             android:layout_width="104dp"
             android:layout_height="31dp"
             android:layout_marginTop="16dp"
-            android:textColor="#FFFFFF"
+            android:textColor="#000000"
             android:textSize="12sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/totalLabel"
@@ -110,7 +110,7 @@
             android:padding="10dp"
             android:text="Checkout"
             android:textAllCaps="false"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:textSize="14sp"
             app:layout_constraintStart_toEndOf="@+id/total_price"
             app:layout_constraintTop_toTopOf="parent" />
@@ -122,7 +122,7 @@
             android:layout_marginStart="16dp"
             android:background="@drawable/round_background"
             android:text="@string/sharebutton"
-            android:textColor="#FFFFFF"
+            android:textColor="#000000"
             android:textSize="14sp"
             app:layout_constraintStart_toEndOf="@+id/total_price"
             app:layout_constraintTop_toTopOf="parent" />

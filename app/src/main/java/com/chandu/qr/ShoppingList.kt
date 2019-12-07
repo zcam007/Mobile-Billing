@@ -32,6 +32,7 @@ class ShoppingList : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         Paper.init(this)
         setContentView(R.layout.activity_shopping_list)
+        this.supportActionBar!!.hide()
         //    setSupportActionBar(toolbar)
         //   apiService = APIConfig.getRetrofitClient(this).create(APIService::class.java)
         swipeRefreshLayout.setColorSchemeColors(ContextCompat.getColor(this, R.color.colorPrimary))
@@ -47,10 +48,6 @@ class ShoppingList : AppCompatActivity() {
         database = FirebaseDatabase.getInstance().reference
         var mMainMenuRef = database.child("/")
         var instance= FirebaseAuth.getInstance()
-        println("helllooooo")
-        println( "YAYAYAYAYAYAYAYAYAYAYAYA: "+instance.currentUser!!.email)
-
-        println("this made is made by charan")
         mMainMenuRef.addListenerForSingleValueEvent(object :ValueEventListener {
             override fun onCancelled(p0: DatabaseError) {
                 print("Error fetching data from firebase")
@@ -58,10 +55,12 @@ class ShoppingList : AppCompatActivity() {
             }
             override fun onDataChange(p0: DataSnapshot) {
                 var children=p0!!.children
-                children.forEach { println(it.value.toString())
-                }
+                //children.forEach { println("crazy!"+it.value.toString())
+               // }
+                println("Children-"+p0)
                 val obj = p0.getValue(Any::class.java)
                 val json = Gson().toJson(obj)
+                println("JSON"+json)
                 getProducts(json.toString())
 
             }
@@ -88,8 +87,8 @@ class ShoppingList : AppCompatActivity() {
 
     private fun getProducts(result: String) {
         swipeRefreshLayout.isRefreshing = false
-//                //   swipeRefreshLayout.is
-                swipeRefreshLayout.isEnabled = false
+//      swipeRefreshLayout.is
+        swipeRefreshLayout.isEnabled = false
         val mapper = jacksonObjectMapper()
         val product: List<Product> = mapper.readValue(result)
         products+=product
