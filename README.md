@@ -19,7 +19,8 @@ In Today’s world, People’s lives are mainly dependent on the mobile phones.I
 
 ### Database Design
 
-For this Application we have used the Google Firebase Realtime Database.
+For this Application we have used the Google Firebase Realtime Database. The Firebase Realtime Database is a cloud-hosted NoSQL database that lets you store and sync data between your users in realtime.
+
 
 ### App Features
 
