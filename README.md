@@ -26,6 +26,7 @@ In this NoSQL database, we have created some columns such as description, id, im
 - Description:  It gives a brief introduction about the item.
 - id: It is a primary key.
 - imageURL : This acts as an image source for the products.
+<br>
 
 
 
