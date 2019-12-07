@@ -19,6 +19,8 @@ In Today’s world, People’s lives are mainly dependent on the mobile phones.I
 
 ### Database Design
 
+For this Application we have used the Google Firebase Realtime Database.
+
 ### App Features
 
 #### Workflow
