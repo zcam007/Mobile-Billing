@@ -8,7 +8,7 @@ In Today’s world, People’s lives are mainly dependent on the mobile phones.I
 
 - Scan a barcode/QR code on the product
 - Identify the product and price
-- Add/Modify Payment Method
+- Add/Modify Shopping cart items
 - Calculate the sub-totals, taxes and total price
 - Accept payment and complete purchase
 
@@ -38,7 +38,7 @@ In this NoSQL database, we have created some columns such as description, id, im
 
 #### Workflow
 
-- Secure access with accont/Google authentication
+- Secure access with account/Google authentication
 - Track billing/invoice information, Order Summary
 - QR Code Scanning
 - Payment Method Storage
