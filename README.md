@@ -29,7 +29,7 @@ In this NoSQL database, we have created some columns such as description, id, im
 - Name : Name of the product.
 - Price : Price of the product.
 <br>
-- Database Structure <br>
+### Database Structure <br>
 ![Image2](https://github.com/Charan16597/Mobile-Billing/blob/master/Database.png)
 
 
