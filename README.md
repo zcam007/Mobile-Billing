@@ -41,8 +41,8 @@ This application can be used by customers for self checkout while shopping. The 
 
 #### DFD Diagrams
 - DFD level-0
-![Image](DFD0.jpg)
+![Image](DFD-0.jpg)
 
 - DFD level-1
-![Image1](DFD1.jpg)
+![Image1](DFD-1.jpg)
 
