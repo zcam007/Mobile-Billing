@@ -10,46 +10,50 @@
 
     <TextView
         android:id="@+id/welcomeTag"
-        android:layout_width="326dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="341dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="4dp"
         android:fontFamily="sans-serif"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnScan"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="133dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="158dp"
+        android:layout_marginEnd="39dp"
         android:background="#FFFFFF"
         android:text="@string/scan_qr_code"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcomeTag">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/productsPage"
+        app:layout_constraintTop_toBottomOf="@+id/showQRScanner">
 
     </Button>
 
     <Button
         android:id="@+id/showQRScanner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="72dp"
+        android:layout_width="341dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="48dp"
         android:text="@string/show_scanner_from_fragment"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnScan" />
+        app:layout_constraintTop_toBottomOf="@+id/welcomeTag" />
 
     <Button
         android:id="@+id/productsPage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="60dp"
+        android:layout_width="133dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="156dp"
         android:background="#FFFFFF"
         android:text="@string/productsPage"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,33 +71,35 @@
         app:layout_constraintTop_toBottomOf="@+id/showQRScanner">
 
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/basketButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/scart"
-            android:tint="@android:color/white"
-            app:backgroundTint="#FF1744"
-            app:fabSize="normal" />
-
-        <TextView
-            android:id="@+id/cart_size"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignEnd="@id/basketButton"
-            android:layout_alignRight="@id/basketButton"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginBottom="25dp"
-            android:background="@drawable/item_count"
-            android:elevation="50dp"
-            android:padding="8dp"
-            android:textColor="@android:color/white"
-            android:textSize="13sp"
-            android:textStyle="bold"
-            tools:targetApi="lollipop" />
-
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/cart_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/item_count"
+        android:elevation="50dp"
+        android:padding="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/basketButton"
+        app:layout_constraintTop_toBottomOf="@+id/btnScan"
+        tools:targetApi="lollipop" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/basketButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="84dp"
+        android:src="@drawable/ic_shopping_basket"
+        android:tint="@android:color/white"
+        app:backgroundTint="#FF1744"
+        app:fabSize="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnScan" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
