@@ -132,7 +132,7 @@ This app is under open source projects and licensed under the [Apache 2.0 licens
 ## License Summary
 
 ```
-Copyright 2017-2018 by Esri
+Copyright 2017-2018
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
