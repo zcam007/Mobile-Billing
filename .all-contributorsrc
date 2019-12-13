@@ -6,6 +6,18 @@
   "commit": false,
   "contributors": [
     {
+      "login": "Charan16597",
+      "name": "Charan16597",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/56246350?v=4",
+      "profile": "https://github.com/Charan16597",
+      "contributions": [
+        "doc",
+        "design",
+        "test",
+        "ideas"
+      ]
+    },
+    {
       "login": "zcam007",
       "name": "ChandraMouli R",
       "avatar_url": "https://avatars2.githubusercontent.com/u/15379984?v=4",
@@ -15,6 +27,18 @@
         "design",
         "ideas",
         "review"
+      ]
+    },
+    {
+      "login": "rewant123",
+      "name": "rockaholic",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/44454278?v=4",
+      "profile": "https://github.com/rewant123",
+      "contributions": [
+        "design",
+        "doc",
+        "bug",
+        "userTesting"
       ]
     }
   ],
