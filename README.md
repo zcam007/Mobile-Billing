@@ -40,10 +40,10 @@ In this NoSQL database, we have created some columns such as description, id, im
 #### Workflow
 
 - Secure access with account/Google authentication
-- Track billing/invoice information, Order Summary
 - QR Code Scanning
-- Payment Method Storage
-- Manage customer information
+- Display available products
+- Add/Remove products in cart
+- Track billing/invoice information, Order Summary
 
 #### Payables
 
@@ -87,6 +87,7 @@ In this NoSQL database, we have created some columns such as description, id, im
 - When the user is a new one he/she can create his own account by opting this module.
 - When the user clicks the Sign up button he is directed to this module.
 - In this module he can create an account by providing his first name, last name, email and password.
+- A verification email is sent to the User to verify the account.
 
 #### 4. Main Activity
 
