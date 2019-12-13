@@ -1,6 +1,6 @@
 # Mobile-Billing App
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <br>
 The main purpose of this application is to reduce the wait time near the billing counter in the grocery stores. We have developed a “Mobile Billing” application that will help you to automatically scan the products that you want to purchase by using QR code scanner that is inbuilt in this application and make the payments for the purchase. This application can be used by customers for self checkout while shopping. The customer downloads the app from the Android Marketplace (Play Store) and scans the items for self checkout without waiting in line to bill items in their cart. It's like having a personal checkout assistant with you always!
@@ -176,7 +176,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://hello.chandu.dev"><img src="https://avatars2.githubusercontent.com/u/15379984?v=4" width="100px;" alt=""/><br /><sub><b>ChandraMouli R</b></sub></a><br /><a href="https://github.com/zcam007/Mobile-Billing/commits?author=zcam007" title="Code">💻</a> <a href="#design-zcam007" title="Design">🎨</a> <a href="#ideas-zcam007" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/zcam007/Mobile-Billing/pulls?q=is%3Apr+reviewed-by%3Azcam007" title="Reviewed Pull Requests">👀</a></td>
-  </tr>
+    <td align="center"><a href="https://github.com/Charan16597"><img src="https://avatars3.githubusercontent.com/u/56246350?v=4" width="100px;" alt=""/><br /><sub><b>Charan16597</b></sub></a><br /><a href="https://github.com/zcam007/Mobile-Billing/commits?author=Charan16597" title="Documentation">📖</a> <a href="#design-Charan16597" title="Design">🎨</a> <a href="https://github.com/zcam007/Mobile-Billing/commits?author=Charan16597" title="Tests">⚠️</a> <a href="#ideas-Charan16597" title="Ideas, Planning, & Feedback">🤔</a></td>
+   </tr>
 </table>
 
 <!-- markdownlint-enable -->
