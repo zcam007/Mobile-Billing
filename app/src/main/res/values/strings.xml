@@ -14,12 +14,22 @@
     <string name="empty">---</string>
     <string name="site_name">Site Name</string>
     <string name="scan_a_code">Scan a QR Code</string>
-    <string name="login_email">johndoe@gmail.com</string>
+    <string name="login_email">Your Email here!</string>
     <string name="result_not_found">Result Not Found</string>
     <string name="show_scanner_from_fragment">Show Scanner From Fragment</string>
     <string name="reset_password_link">Reset Password Link</string>
     <string name="reset_password">Reset</string>
-    <string name="sharebutton">Share Receipt</string>
+    <string name="sharebutton">Share</string>
     <string name="productsPage">Products</string>
+    <string name="textView3">Sign in with Google</string>
+    <string name="resetbtn">Reset Password</string>
+    <string name="textView5">OR</string>
+    <string name="textView6">Quantity</string>
+    <string name="forgotpassword">Reset your password here</string>
+    <string name="editText2">Enter your email here</string>
+    <string name="textView4">Email</string>
+    <string name="editText1">Enter your email here</string>
+    <string name="totalLabel">Total:</string>
+    <string name="Checkoutbtn">Checkout</string>
 
 </resources>

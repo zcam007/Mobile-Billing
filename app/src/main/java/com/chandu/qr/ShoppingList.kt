@@ -32,6 +32,7 @@ class ShoppingList : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         Paper.init(this)
         setContentView(R.layout.activity_shopping_list)
+        this.supportActionBar!!.hide()
         //    setSupportActionBar(toolbar)
         //   apiService = APIConfig.getRetrofitClient(this).create(APIService::class.java)
         swipeRefreshLayout.setColorSchemeColors(ContextCompat.getColor(this, R.color.colorPrimary))

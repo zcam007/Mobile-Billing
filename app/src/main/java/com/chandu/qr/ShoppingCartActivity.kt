@@ -21,7 +21,7 @@ class ShoppingCartActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_shopping_cart)
 
-
+        this.supportActionBar!!.hide()
 //        setSupportActionBar(toolbar)
 //
 //        supportActionBar?.setDisplayShowHomeEnabled(true)

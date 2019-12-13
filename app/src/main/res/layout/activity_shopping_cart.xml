@@ -4,8 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:background="@drawable/design4"
-        android:layout_height="match_parent"
+        android:background="@drawable/gradient3"
+
+    android:layout_height="match_parent"
         tools:context=".ShoppingCartActivity">
 
 
@@ -19,10 +20,9 @@
             android:id="@+id/toolbar"
             android:layout_width="162dp"
             android:layout_height="?attr/actionBarSize"
-            android:background="#EDF0F3"
 
             app:title="Shopping Cart"
-            app:titleTextColor="@color/colorAccent" />
+            app:titleTextColor="@color/md_white_1000" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -30,16 +30,18 @@
         android:id="@+id/shopping_cart_recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="2dp"
+        android:layout_margin="1dp"
 
-        android:background="@drawable/design10"
+        android:background="@drawable/gradient4"
+        app:layout_anchor="@+id/shopping_cart_recyclerView"
+        app:layout_anchorGravity="center"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     <RelativeLayout
             android:padding="8dp"
             android:layout_gravity="bottom"
             android:elevation="15dp"
-            android:background="@color/colorAccent"
+            android:background="@drawable/gradient"
             android:layout_width="match_parent"
             android:layout_height="66dp"
             tools:targetApi="lollipop"
@@ -51,26 +53,12 @@
         android:layout_width="match_parent"
         android:layout_height="66dp"
         android:layout_gravity="bottom"
-        android:background="@color/colorAccent"
+        android:background="#3181B3"
         android:elevation="15dp"
         android:padding="8dp"
 
         tools:targetApi="lollipop">
 
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="32dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="RtlCompat">
-
-        </LinearLayout>
 
         <TextView
             android:id="@+id/totalLabel"
@@ -78,49 +66,51 @@
             android:layout_height="24dp"
             android:layout_marginStart="6dp"
             android:layout_marginTop="14dp"
-            android:text="Total"
+            android:text="@string/totalLabel"
             android:textColor="#FFFFFF"
-            android:textSize="14sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+
         <TextView
             android:id="@+id/total_price"
             android:layout_width="104dp"
-            android:layout_height="31dp"
+            android:layout_height="34dp"
             android:layout_marginTop="16dp"
             android:textColor="#FFFFFF"
-            android:textSize="12sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/totalLabel"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="RtlCompat" />
 
-
         <Button
+            android:id="@+id/Checkoutbtn"
             android:layout_width="91dp"
             android:layout_height="42dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginStart="132dp"
+            android:layout_marginStart="136dp"
             android:layout_marginTop="4dp"
-            android:background="@drawable/round_background"
+            android:background="#C2185B"
             android:padding="10dp"
-            android:text="Checkout"
+            android:text="@string/Checkoutbtn"
             android:textAllCaps="false"
-            android:textColor="@android:color/white"
+            android:textColor="#FFFFFF"
             android:textSize="14sp"
             app:layout_constraintStart_toEndOf="@+id/total_price"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/sharebutton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:background="@drawable/round_background"
+            android:layout_width="91dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:background="#C2185B"
             android:text="@string/sharebutton"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
