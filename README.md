@@ -4,13 +4,13 @@ The main purpose of this application is to reduce the wait time near the billing
 
 <br>
 
-### Functional Requirement
+### Functional Requirements
 
-- Scan a barcode/QR code on the product
-- Identify the product and price
-- Add/Modify Shopping cart items
-- Calculate the sub-totals, taxes and total price
-- Accept payment and complete purchase
+- The system shall scan a barcode/QR code of the product and Identify the product and price.
+- The system shall display the list of available items.
+- Add/Modify Shopping cart items.
+- Calculate the totals, taxes and total price.
+- Accept payment and complete purchase.
 
 ### User Requirements
 - Mobile Device
