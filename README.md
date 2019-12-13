@@ -40,10 +40,10 @@ In this NoSQL database, we have created some columns such as description, id, im
 #### Workflow
 
 - Secure access with account/Google authentication
-- Track billing/invoice information, Order Summary
 - QR Code Scanning
-- Payment Method Storage
-- Manage customer information
+- Display available products
+- Add/Remove products in cart
+- Track billing/invoice information, Order Summary
 
 #### Payables
 
