@@ -13,9 +13,9 @@ In Today’s world, People’s lives are mainly dependent on the mobile phones.I
 - Accept payment and complete purchase
 
 ### User Requirements
-- Mobile Device
-- Android OS
-- Application installed and compatible with user's android version
+- Mobile Device (With Working Camera)
+- Android OS (Version 4.4 or above)
+
 
 ### Database Design
 
