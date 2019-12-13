@@ -15,10 +15,10 @@ User Requirements
 
 User Requirements
 ------------
-- Mobile Device
-- Android OS
-- Application installed and compatible with user's android version
- 
+
+- Mobile Device (With Working Camera)
+- Android OS (Version 4.4 or above)
+
 Database Design
 ------------
 
