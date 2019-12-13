@@ -1,25 +1,28 @@
 # Mobile-Billing App
 <br>
-In Today’s world, People’s lives are mainly dependent on the mobile phones.In recent times, a lot of applications have been developed/created. There are many advantages and disadvantages by using these applications. We hope that the  application that we have created is beneficial and helpful for the people. The main purpose of this application is to reduce the wait time near the billing counter in the grocery stores. We have developed a “Mobile Billing” application that will help you to automatically scan the products that you want to purchase by using QR code scanner that is inbuilt in this application and make the payments for the purchase. This application can be used by customers for self checkout while shopping. The customer downloads the app from the Android Marketplace (Play Store) and scans the items for self checkout without waiting in line to bill items in their cart. It's like having a personal checkout assistant.
+The main purpose of this application is to reduce the wait time near the billing counter in the grocery stores. We have developed a “Mobile Billing” application that will help you to automatically scan the products that you want to purchase by using QR code scanner that is inbuilt in this application and make the payments for the purchase. This application can be used by customers for self checkout while shopping. The customer downloads the app from the Android Marketplace (Play Store) and scans the items for self checkout without waiting in line to bill items in their cart. It's like having a personal checkout assistant with you always!
 
 <br>
 
-### Functional Requirement
+User Requirements
+------------
 
-- Scan a barcode/QR code on the product
-- Identify the product and price
-- Add/Modify Shopping cart items
-- Calculate the sub-totals, taxes and total price
-- Accept payment and complete purchase
+- The system shall scan a barcode/QR code of the product and Identify the product and price.
+- The system shall display the list of available items.
+- Add/Modify Shopping cart items.
+- Calculate the totals, taxes and total price.
+- Accept payment and complete purchase.
 
-### User Requirements
+User Requirements
+------------
+
 - Mobile Device (With Working Camera)
 - Android OS (Version 4.4 or above)
 
+Database Design
+------------
 
-### Database Design
-
-For this Application we have used the Google Firebase Realtime Database. The Firebase Realtime Database is a cloud-hosted NoSQL database that lets you store and sync data between your users in realtime. Realtime syncing makes it easy for your users to access their data from any device, be it web or mobile. Realtime Database also helps your users collaborate with one another. 
+For this Application we have used the **Google Firebase** Realtime Database. The Firebase Realtime Database is a cloud-hosted NoSQL database that lets you store and sync data between your users in realtime. Realtime syncing makes it easy for your users to access their data from any device, be it web or mobile. Realtime Database also helps your users collaborate with one another. 
 <br>
 In this NoSQL database, we have created some columns such as description, id, imageURL, name and price where each individual column has its own individual action performed in the database.
 <br>
@@ -34,8 +37,8 @@ In this NoSQL database, we have created some columns such as description, id, im
 ![Image2](https://github.com/Charan16597/Mobile-Billing/blob/master/Database.png)
 
 
-
-### App Features
+App Features
+------------
 
 #### Workflow
 
@@ -51,13 +54,14 @@ In this NoSQL database, we have created some columns such as description, id, im
 - Checkout quickly and easily
 - Multiple payment options
 
-### Receivables
+#### Receivables
 
 - Manage products and customer
 - Create invoice
 - Keep track of payments received
 
-### DFD Diagrams
+DFD Diagrams
+------------
 
 - DFD level-0
 ![Image](DFD-0.jpg)
@@ -66,8 +70,8 @@ In this NoSQL database, we have created some columns such as description, id, im
 ![Image1](DFD-1.jpg)
 
 
-
-### App Modules and their responsibilities
+App Modules and their responsibilities
+------------
 
 
 #### 1. Login Page
@@ -108,6 +112,40 @@ In this NoSQL database, we have created some columns such as description, id, im
 - Responsible for sharing the receipt to your friends via mail, Whatsapp etc.
 
 
+Contributing
+------------
+
+ 1. **Fork** the repo on GitHub
+ 2. **Clone** the project to your own machine
+ 3. **Commit** changes to your own branch
+ 4. **Push** your work back up to your fork
+ 5. Submit a **Pull request** so that we can review your changes
+
+NOTE: Be sure to merge the latest from "upstream" before making a pull request!
+
+Copyright and Licensing
+-----------------------
+
+This app is under open source projects and licensed under the [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0)
+
+
+## License Summary
+
+```
+Copyright 2017-2018
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
 
 
 
