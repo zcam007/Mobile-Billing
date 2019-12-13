@@ -1,38 +1,38 @@
 {
-  "files": [
-    "README.md"
-  ],
-  "imageSize": 100,
-  "commit": false,
-  "contributors": [
-    {
-      "login": "Charan16597",
-      "name": "Charan16597",
-      "avatar_url": "https://avatars3.githubusercontent.com/u/56246350?v=4",
-      "profile": "https://github.com/Charan16597",
-      "contributions": [
-        "doc",
-        "design",
-        "test",
-        "ideas"
-        },
-        {
-      "login": "zcam007",
-      "name": "ChandraMouli R",
-      "avatar_url": "https://avatars2.githubusercontent.com/u/15379984?v=4",
-      "profile": "https://hello.chandu.dev",
-      "contributions": [
-        "code",
-        "design",
-        "ideas",
-        "review"
-      ]
-    }
-  ],
-  "contributorsPerLine": 7,
-  "projectName": "Mobile-Billing",
-  "projectOwner": "zcam007",
-  "repoType": "github",
-  "repoHost": "https://github.com",
-  "skipCi": true
+	"files": [
+		"README.md"
+	],
+	"imageSize": 100,
+	"commit": false,
+	"contributors": [{
+			"login": "Charan16597",
+			"name": "Charan16597",
+			"avatar_url": "https://avatars3.githubusercontent.com/u/56246350?v=4",
+			"profile": "https://github.com/Charan16597",
+			"contributions": [
+				"doc",
+				"design",
+				"test",
+				"ideas"
+			]
+		},
+		{
+			"login": "zcam007",
+			"name": "ChandraMouli R",
+			"avatar_url": "https://avatars2.githubusercontent.com/u/15379984?v=4",
+			"profile": "https://hello.chandu.dev",
+			"contributions": [
+				"code",
+				"design",
+				"ideas",
+				"review"
+			]
+		}
+	],
+	"contributorsPerLine": 7,
+	"projectName": "Mobile-Billing",
+	"projectOwner": "zcam007",
+	"repoType": "github",
+	"repoHost": "https://github.com",
+	"skipCi": true
 }
