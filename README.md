@@ -7,7 +7,7 @@ The main purpose of this application is to reduce the wait time near the billing
 
 <br>
 
-User Requirements
+Functional Requirements
 ------------
 
 - The system shall scan a barcode/QR code of the product and Identify the product and price.
