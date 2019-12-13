@@ -7,7 +7,7 @@ The main purpose of this application is to reduce the wait time near the billing
 
 <br>
 
-User Requirements
+Functional Requirements
 ------------
 
 - The system shall scan a barcode/QR code of the product and Identify the product and price.
@@ -35,9 +35,10 @@ In this NoSQL database, we have created some columns such as description, id, im
 - Name : Name of the product.
 - Price : Price of the product.
 <br>
-- Database Structure 
-<br>
-![Image2](https://github.com/Charan16597/Mobile-Billing/blob/master/Database.png)
+
+Database Structure
+------------
+<a href="https://github.com/Charan16597/Mobile-Billing/blob/master/Database.png">Click here!</a> for database structure.
 
 
 App Features
