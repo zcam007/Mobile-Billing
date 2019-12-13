@@ -93,32 +93,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_password" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="190dp"
-        android:layout_marginTop="49dp"
-        android:text="@string/textView5"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resetbtn" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="225dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="112dp"
-        android:text="@string/textView3"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resetbtn" />
-
     <com.google.android.gms.common.SignInButton
         android:id="@+id/sign_in_button"
         android:layout_width="wrap_content"

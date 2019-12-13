@@ -14,7 +14,7 @@
     <string name="empty">---</string>
     <string name="site_name">Site Name</string>
     <string name="scan_a_code">Scan a QR Code</string>
-    <string name="login_email">johndoe@gmail.com</string>
+    <string name="login_email">Your Email here!</string>
     <string name="result_not_found">Result Not Found</string>
     <string name="show_scanner_from_fragment">Show Scanner From Fragment</string>
     <string name="reset_password_link">Reset Password Link</string>
